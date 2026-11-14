@@ -5,13 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arif Yılmaz | Yeni Türk Edebiyatı, Uşak Üniversitesi</title>
 <meta name="description" content="Doç. Dr. Arif Yılmaz, Uşak Üniversitesi Türk Dili ve Edebiyatı Bölümü, Yeni Türk Edebiyatı. Özgeçmiş, kitaplar, makaleler, bildiriler ve dersler.">
+<link rel="canonical" href="https://yilmaz-arif.github.io/">
+<link rel="alternate" hreflang="tr" href="https://yilmaz-arif.github.io/">
+<link rel="alternate" hreflang="en" href="https://yilmaz-arif.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://yilmaz-arif.github.io/">
 <meta property="og:title" content="Arif Yılmaz | Yeni Türk Edebiyatı">
 <meta property="og:description" content="Uşak Üniversitesi Türk Dili ve Edebiyatı Bölümü öğretim üyesi. Özgeçmiş, yayınlar ve dersler.">
 <meta property="og:type" content="profile">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://yilmaz-arif.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alegreya+Sans:wght@400;500&display=swap">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arif Yılmaz", "honorificPrefix": "Doç. Dr.", "jobTitle": "Doçent, Yeni Türk Edebiyatı", "affiliation": {"@type": "CollegeOrUniversity", "name": "Uşak Üniversitesi"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Ankara Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Gazi Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Yüzüncü Yıl Üniversitesi"}], "knowsAbout": ["Yeni Türk Edebiyatı", "Türk şiiri", "Türk romanı", "Türk hikâyesi", "Türk tiyatrosu", "Metin neşri"], "identifier": "https://orcid.org/0000-0002-2652-3649", "sameAs": ["https://orcid.org/0000-0002-2652-3649", "https://avesis.usak.edu.tr/arif.yilmaz", "https://dergipark.org.tr/tr/pub/@ayilmaz_1038", "https://publons.com/researcher/ACV-6378-2022/"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arif Yılmaz", "url": "https://yilmaz-arif.github.io/", "identifier": "https://orcid.org/0000-0002-2652-3649", "sameAs": ["https://orcid.org/0000-0002-2652-3649", "https://avesis.usak.edu.tr/arif.yilmaz", "https://dergipark.org.tr/tr/pub/@ayilmaz_1038", "https://publons.com/researcher/ACV-6378-2022/"], "honorificPrefix": "Doç. Dr.", "jobTitle": "Doçent, Yeni Türk Edebiyatı", "affiliation": {"@type": "CollegeOrUniversity", "name": "Uşak Üniversitesi"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Ankara Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Gazi Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Yüzüncü Yıl Üniversitesi"}], "knowsAbout": ["Yeni Türk Edebiyatı", "Türk şiiri", "Türk romanı", "Türk hikâyesi", "Türk tiyatrosu", "Metin neşri"]}</script>
 <style>
 
 :root {
@@ -40,6 +46,7 @@ cite { font-style: italic; }
 
 /* İç kapak */
 .ic-kapak {
+  position: relative;
   min-height: 86vh; min-height: 86svh;
   display: flex; flex-direction: column; justify-content: center; align-items: center;
   text-align: center; padding: 4rem 1.5rem 3rem;
@@ -53,6 +60,10 @@ cite { font-style: italic; }
 .ic-kapak .kurum { font-family: var(--sans); color: var(--kursun); font-size: 1.02rem; line-height: 1.5; margin: 1.1rem 0 0; }
 .ic-kapak .kurum span { display: block; }
 
+.ic-kapak .dil { position: absolute; top: 1.1rem; right: 1.25rem; font-family: var(--sans);
+                  font-size: 1rem; color: var(--kursun); text-decoration: none; }
+.ic-kapak .dil:hover { color: var(--surh); }
+
 /* Gezinti */
 nav.icindekiler {
   position: sticky; top: 0; z-index: 5; background: var(--kagit);
@@ -65,6 +76,7 @@ nav.icindekiler ul {
 nav.icindekiler a { display: block; padding: .72rem 0; font-family: var(--sans); font-size: 1rem;
                     text-decoration: none; color: var(--kursun); }
 nav.icindekiler a:hover { color: var(--surh); }
+nav.icindekiler li.dil-nav { margin-left: auto; padding-left: 1rem; }
 
 main { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem 5rem; }
 section { scroll-margin-top: 3.4rem; }
@@ -97,6 +109,8 @@ ol.kunye p { margin: 0; }
 a.doi { font-family: var(--sans); font-size: .9em; color: var(--kursun); white-space: nowrap; }
 .pdfler { font-family: var(--sans); font-size: .9em; color: var(--kursun); }
 .pdfler a.doi { font-size: 1em; white-space: normal; }
+.ceviri { display: block; color: var(--kursun); margin-top: .15rem; }
+.ozgun { display: block; color: var(--kursun); font-size: .92em; font-style: italic; }
 
 ul.dersler, ul.baglantilar { list-style: none; padding: 0; margin: 0; }
 ul.dersler li { padding: .5rem 0; border-bottom: 1px solid var(--cizgi); }
@@ -107,8 +121,7 @@ ul.baglantilar a { font-variant-numeric: lining-nums; }
 ul.baglantilar .etiket { font-family: var(--sans); color: var(--kursun); }
 .iletisim { margin-top: 1.4rem; }
 
-.ingilizce { margin-top: 4.6rem; padding-top: 2rem; border-top: 1px solid var(--cizgi); }
-.ingilizce h2 { margin-top: 0; font-size: 1.5rem; }
+
 
 footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-family: var(--sans);
           color: var(--kursun); font-size: .95rem; border-top: 1px solid var(--cizgi); }
@@ -130,10 +143,12 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
   h2, h3 { break-after: avoid; }
   ol.kunye li { break-inside: avoid; }
 }
+
 </style>
 </head>
 <body>
 <header class="ic-kapak">
+  <a class="dil" href="en/" hreflang="en" lang="en">English</a>
   <h1>Arif Yılmaz</h1>
   <hr class="surh-cizgi">
   <p class="alan">Yeni Türk Edebiyatı</p>
@@ -148,6 +163,7 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
   <li><a href="#dersler">Dersler</a></li>
   <li><a href="#tezler">Yönettiği tezler</a></li>
   <li><a href="#baglantilar">Bağlantılar</a></li>
+  <li class="dil-nav"><a href="en/" hreflang="en" lang="en">English</a></li>
 </ul>
 </nav>
 
@@ -177,7 +193,7 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
 
 <section id="yayinlar">
 <h2>Yayınlar</h2>
-<p>Yayınlar yeniden eskiye sıralanmıştır. Ortak yazarlı çalışmalarda yazarlar yayımlandığı sırayla verilmiştir. Kitapların kapak, içindekiler, giriş, sonuç ve kaynakça sayfaları PDF olarak indirilebilir.</p>
+<p>Yayınlar yeniden eskiye sıralanmıştır. Ortak yazarlı çalışmalarda yazarlar yayımlandığı sırayla verilmiştir. Kitapların kapak, içindekiler, giriş, sonuç ve kaynakça sayfaları ile bazı bildirilerin tam metinleri PDF olarak indirilebilir.</p>
 <h3 id="telif">Telif kitaplar <span class="sayi">4</span></h3>
 <ol class="kunye" reversed>
 <li><span class="yil">2012</span><p><cite>Kemal Bilbaşar’ın Öykücülüğü</cite>. Türkçe Mevsimi, Uşak. <a class="doi" href="kitaplar/2012-kemal-bilbasarin-oykuculugu.pdf">Tanıtım sayfaları (PDF)</a></p></li>
@@ -214,27 +230,27 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
 <li><span class="yil tekrar">2023</span><p><span class="yazar">Arif Yılmaz ve Fatih Bayram.</span> “Epik Tiyatroda Merak Duygusunun Kırılması.” <cite>RumeliDE Dil ve Edebiyat Araştırmaları Dergisi</cite> <span class="nw">35: 423–438</span>. <a class="doi" href="https://doi.org/10.29000/rumelide.1342128">doi:10.29000/rumelide.1342128</a></p></li>
 <li><span class="yil">2017</span><p><span class="yazar">Arif Yılmaz ve Burcu Uşaklı Sandal.</span> “Füruzan’ın Öykülerinde Oidipal Kadın Kahramanlar ve Anne-Kız Çatışmaları.” <cite>Turkish Studies</cite> <span class="nw">12 (15): 667–686</span>. <a class="doi" href="https://doi.org/10.7827/TurkishStudies.11625">doi:10.7827/TurkishStudies.11625</a></p></li>
 <li><span class="yil">2015</span><p><span class="yazar">Arif Yılmaz ve Nergiz Gümüş Özdemir.</span> “Hüseyin Sîret’in ‘Leyâl-i Girîzân’ Adlı Şiiri.” <cite>Uluslararası Sosyal ve Eğitim Bilimleri Dergisi</cite> <span class="nw">2 (4): 148–174</span>. <a class="doi" href="https://doi.org/10.20860/ijoses.51448">doi:10.20860/ijoses.51448</a></p></li>
-<li><span class="yil">2012</span><p>“İsmail Safa’nın Şiir Anlayışı ve Ilımlılar.” <cite>Gaziantep Üniversitesi Sosyal Bilimler Dergisi</cite> <span class="nw">11 (1): 137–158</span>.</p></li>
-<li><span class="yil tekrar">2012</span><p>“Mehmet Âkif Ersoy’un Şiirlerinde Halk Kültürü Ögeleri.” <cite>Mustafa Kemal Üniversitesi Sosyal Bilimler Enstitüsü Dergisi</cite> <span class="nw">9 (17): 163–194</span>.</p></li>
-<li><span class="yil">2011</span><p>“Orhan Veli’de Kaçış.” <cite>Gaziantep Üniversitesi Sosyal Bilimler Dergisi</cite> <span class="nw">10 (1): 257–279</span>.</p></li>
-<li><span class="yil">2010</span><p>“Sosyal ve Siyasî Değişmeler Açısından Peyami Safa’nın <cite>Mahşer</cite> Romanı.” <cite>Yeni Türk Edebiyatı Araştırmaları</cite> <span class="nw">3: 39–57</span>.</p></li>
-<li><span class="yil">2009</span><p>“Mehmet Âkif Ersoy’un Şiirlerinde Halk Dilinin Kullanımı.” <cite>Mustafa Kemal Üniversitesi Sosyal Bilimler Enstitüsü Dergisi</cite> <span class="nw">6 (11): 189–210</span>.</p></li>
+<li><span class="yil">2012</span><p>“İsmail Safa’nın Şiir Anlayışı ve Ilımlılar.” <cite>Gaziantep Üniversitesi Sosyal Bilimler Dergisi</cite> <span class="nw">11 (1): 137–158</span>. <a class="doi" href="https://dergipark.org.tr/tr/pub/jss/article/256976">Tam metin (DergiPark)</a></p></li>
+<li><span class="yil tekrar">2012</span><p>“Mehmet Âkif Ersoy’un Şiirlerinde Halk Kültürü Ögeleri.” <cite>Mustafa Kemal Üniversitesi Sosyal Bilimler Enstitüsü Dergisi</cite> <span class="nw">9 (17): 163–194</span>. <a class="doi" href="https://dergipark.org.tr/tr/pub/mkusbed/article/208285">Tam metin (DergiPark)</a></p></li>
+<li><span class="yil">2011</span><p>“Orhan Veli’de Kaçış.” <cite>Gaziantep Üniversitesi Sosyal Bilimler Dergisi</cite> <span class="nw">10 (1): 257–279</span>. <a class="doi" href="https://dergipark.org.tr/tr/pub/jss/article/257042">Tam metin (DergiPark)</a></p></li>
+<li><span class="yil">2010</span><p>“Sosyal ve Siyasî Değişmeler Açısından Peyami Safa’nın <cite>Mahşer</cite> Romanı.” <cite>Yeni Türk Edebiyatı Araştırmaları</cite> <span class="nw">3: 39–57</span>. <a class="doi" href="https://dergipark.org.tr/tr/pub/ytea/article/330201">Tam metin (DergiPark)</a></p></li>
+<li><span class="yil">2009</span><p>“Mehmet Âkif Ersoy’un Şiirlerinde Halk Dilinin Kullanımı.” <cite>Mustafa Kemal Üniversitesi Sosyal Bilimler Enstitüsü Dergisi</cite> <span class="nw">6 (11): 189–210</span>. <a class="doi" href="https://dergipark.org.tr/tr/pub/mkusbed/article/208489">Tam metin (DergiPark)</a></p></li>
 <li><span class="yil">2006</span><p>“Sabahattin Kudret Aksal’ın Şiirlerinde ‘Kaçış’ Teması.” <cite>Türk Dili</cite> <span class="nw">91 (653): 421–432</span>.</p></li>
 <li><span class="yil">2005</span><p>“Sabahattin Kudret Aksal’ın Hikâyeleri.” <cite>Türk Dili</cite> <span class="nw">90 (645): 254–263</span>.</p></li>
 <li><span class="yil">2002</span><p>“Atsız’ın Niyazi Yıldırım Gençosmanoğlu’na Gönderdiği Mektuplar.” <cite>Türk Yurdu</cite> <span class="nw">22 (184): 44–49</span>.</p></li>
 </ol>
 <h3 id="bildiriler">Bildiriler <span class="sayi">12</span></h3>
 <ol class="kunye" reversed>
-<li><span class="yil">2025</span><p><span class="yazar">Arif Yılmaz ve Aysel Akdağ Uygun.</span> “Cemil Kavukçu’nun Öykülerinde Yalnızlık Tezahürleri: Ekoeleştirel Bir Okuma.” <cite>13th International New York Academic Research Congress on Social, Humanities, Administrative and Educational Sciences</cite>, <span class="nw">s. 448–460</span>. <a class="doi" href="https://doi.org/10.30546/19023.978-9952-8573-9-9.2025.9012">doi:10.30546/19023.978-9952-8573-9-9.2025.9012</a></p></li>
+<li><span class="yil">2025</span><p><span class="yazar">Arif Yılmaz ve Aysel Akdağ Uygun.</span> “Cemil Kavukçu’nun Öykülerinde Yalnızlık Tezahürleri: Ekoeleştirel Bir Okuma.” <cite>13th International New York Academic Research Congress on Social, Humanities, Administrative and Educational Sciences</cite>, <span class="nw">s. 448–460</span>. <a class="doi" href="https://doi.org/10.30546/19023.978-9952-8573-9-9.2025.9012">doi:10.30546/19023.978-9952-8573-9-9.2025.9012</a> <a class="doi" href="bildiriler/2025-cemil-kavukcunun-oykulerinde-yalnizlik-tezahurleri.pdf">Tam metin (PDF)</a></p></li>
 <li><span class="yil tekrar">2025</span><p><span class="yazar">Arif Yılmaz ve Aysel Akdağ Uygun.</span> “Cemil Kavukçu’nun Öykülerinde Tabiatın İyileştirici Gücü.” <cite>7. Uluslararası Karadeniz Modern Bilimsel Araştırmalar Kongresi</cite>, <span class="nw">s. 1–10</span>.</p></li>
 <li><span class="yil">2024</span><p>“Dijital Çağda Şiirin Metamorfozu: İbrahim Tenekeci’nin Instagram Paylaşımları Üzerine Bir İnceleme.” <cite>Globallashuv davrida filologiya fanlarini o‘qitishning dolzarb muammolari</cite> (Karşı, Özbekistan), <span class="nw">s. 17–26</span>.</p></li>
 <li><span class="yil tekrar">2024</span><p>“Yakın Dönem Türk Romanlarında Yabancılaşmanın Dili: Sembol.” <cite>The Development History and Modern Significance of Intercultural Dialogue</cite> (Semerkant), <span class="nw">s. 621–626</span>.</p></li>
-<li><span class="yil tekrar">2024</span><p><span class="yazar">Arif Yılmaz ve Mustafa Çiçek.</span> “Abdurrahim Karakoç’un <cite>Vur Emri</cite> Şiir Kitabında Yer Alan Halk Bilimi Öğeleri.” <cite>12. Uluslararası Başkent Sosyal, Beşeri, İdari ve Eğitim Bilimleri Kongresi</cite>, <span class="nw">s. 1086–1101</span>. <a class="doi" href="https://doi.org/10.5281/zenodo.11194274">doi:10.5281/zenodo.11194274</a></p></li>
+<li><span class="yil tekrar">2024</span><p><span class="yazar">Arif Yılmaz ve Mustafa Çiçek.</span> “Abdurrahim Karakoç’un <cite>Vur Emri</cite> Şiir Kitabında Yer Alan Halk Bilimi Öğeleri.” <cite>12. Uluslararası Başkent Sosyal, Beşeri, İdari ve Eğitim Bilimleri Kongresi</cite>, <span class="nw">s. 1086–1101</span>. <a class="doi" href="https://doi.org/10.5281/zenodo.11194274">doi:10.5281/zenodo.11194274</a> <a class="doi" href="bildiriler/2024-abdurrahim-karakocun-vur-emri-siir-kitabinda-halk-bilimi-ogeleri.pdf">Tam metin (PDF)</a></p></li>
 <li><span class="yil">2023</span><p><span class="yazar">Arif Yılmaz ve Bayram Bilir.</span> “Türk Edebiyatında Toplumcu Gerçekçi Romanların Ortaya Çıkışı.” <cite>Tilshunoslik va lingvodidaktikaning istiqbolli yo‘nalishlari</cite> (Semerkant), <span class="nw">s. 234–238</span>.</p></li>
 <li><span class="yil tekrar">2023</span><p><span class="yazar">Bayram Bilir ve Arif Yılmaz.</span> “İlköğretimde Toplumcu Gerçekçi Eserler Meselesi.” <cite>Global Issues of Primary Education Development: Problem, Research</cite>, <span class="nw">s. 290–292</span>.</p></li>
 <li><span class="yil tekrar">2023</span><p><span class="yazar">Bayram Bilir ve Arif Yılmaz.</span> “Toplumcu Gerçekçi Özbek Romanlarında Rüşvet Kronotopu.” <cite>Global and National Values Along Great Silk Road: Language, Education and Culture</cite>, <span class="nw">s. 100–102</span>.</p></li>
 <li><span class="yil tekrar">2023</span><p><span class="yazar">Arif Yılmaz ve Mustafa Çiçek.</span> “Abdurrahim Karakoç’un Şiirlerinde Halk Bilimi Öğeleri” (özet). <cite>8th International Congress on Humanities and Social Sciences in a Changing World</cite>, <span class="nw">s. 218–219</span>.</p></li>
-<li><span class="yil tekrar">2023</span><p><span class="yazar">Arif Yılmaz ve Fatih Bayram.</span> “Epik Tiyatroda Kullanılan Tekniklerin İşlevselliği.” <cite>5th International “Artemis” Congress on Humanities and Social Sciences</cite>, <span class="nw">s. 339–345</span>.</p></li>
+<li><span class="yil tekrar">2023</span><p><span class="yazar">Arif Yılmaz ve Fatih Bayram.</span> “Epik Tiyatroda Kullanılan Tekniklerin İşlevselliği.” <cite>5th International “Artemis” Congress on Humanities and Social Sciences</cite>, <span class="nw">s. 339–345</span>. <a class="doi" href="bildiriler/2023-epik-tiyatroda-kullanilan-tekniklerin-islevselligi.pdf">Tam metin (PDF)</a></p></li>
 <li><span class="yil tekrar">2023</span><p><span class="yazar">Arif Yılmaz ve Fatih Bayram.</span> “Epik Tiyatroda Ara Oyun Kullanımı” (özet). <cite>5th International “Artemis” Congress on Humanities and Social Sciences</cite>, <span class="nw">s. 322–323</span>.</p></li>
 <li><span class="yil">2016</span><p><span class="yazar">Arif Yılmaz ve Aykut Çelik.</span> “Mizah Kavramı Çerçevesinde Yeni Garipçi Şiire Bir Bakış.” <cite>1. Uluslararası Sosyal Bilimler Sempozyumu</cite>, <span class="nw">s. 3075–3091</span>.</p></li>
 </ol>
@@ -284,11 +300,6 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
 <li><span class="etiket">Web of Science ResearcherID</span> <a href="https://publons.com/researcher/ACV-6378-2022/">ACV-6378-2022</a></li>
 </ul>
 <p class="iletisim">Uşak Üniversitesi, İnsan ve Toplum Bilimleri Fakültesi, Türk Dili ve Edebiyatı Bölümü, Uşak.</p>
-</section>
-
-<section class="ingilizce" lang="en" aria-labelledby="en">
-<h2 id="en">In English</h2>
-<p>Arif Yılmaz is Associate Professor of Modern Turkish Literature at Uşak University, Türkiye. He received his PhD from Ankara University in 2004 with a dissertation on the poet Sabahattin Kudret Aksal. His research covers Turkish poetry, fiction and drama from the Tanzimat period to the present, as well as textual scholarship: he has prepared critical editions of the works of Sabahattin Kudret Aksal, Niyazi Yıldırım Gençosmanoğlu and Halid Ziya Uşaklıgil. He taught at the University of Aleppo (2005–2008) and Gaziantep University (2008–2012), and was a visiting professor at Samarkand State Institute of Foreign Languages in 2024–2025.</p>
 </section>
 </main>
 
