@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alegreya+Sans:wght@400;500&display=swap">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arif Yılmaz", "image": "https://yilmaz-arif.github.io/gorsel/arif-yilmaz.jpg", "url": "https://yilmaz-arif.github.io/", "identifier": "https://orcid.org/0000-0002-2652-3649", "sameAs": ["https://www.researchgate.net/profile/Arif-Yilmaz", "https://scholar.google.com/citations?user=m_PXF6oAAAAJ", "https://orcid.org/0000-0002-2652-3649", "https://avesis.usak.edu.tr/arif.yilmaz", "https://dergipark.org.tr/tr/pub/@ayilmaz_1038", "https://publons.com/researcher/ACV-6378-2022/"], "honorificPrefix": "Doç. Dr.", "jobTitle": "Doçent, Yeni Türk Edebiyatı", "affiliation": {"@type": "CollegeOrUniversity", "name": "Uşak Üniversitesi"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Ankara Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Gazi Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Yüzüncü Yıl Üniversitesi"}], "knowsAbout": ["Yeni Türk Edebiyatı", "Türk şiiri", "Türk romanı", "Türk hikâyesi", "Türk tiyatrosu", "Metin neşri"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arif Yılmaz", "image": "https://yilmaz-arif.github.io/gorsel/arif-yilmaz.jpg", "url": "https://yilmaz-arif.github.io/", "identifier": "https://orcid.org/0000-0002-2652-3649", "sameAs": ["https://www.researchgate.net/profile/Arif-Yilmaz", "https://scholar.google.com/citations?user=m_PXF6oAAAAJ", "https://orcid.org/0000-0002-2652-3649", "https://avesis.usak.edu.tr/arif.yilmaz", "https://dergipark.org.tr/tr/pub/@ayilmaz_1038", "https://www.webofscience.com/wos/author/rid/ACV-6378-2022"], "honorificPrefix": "Doç. Dr.", "jobTitle": "Doçent, Yeni Türk Edebiyatı", "affiliation": {"@type": "CollegeOrUniversity", "name": "Uşak Üniversitesi"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Ankara Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Gazi Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Yüzüncü Yıl Üniversitesi"}], "knowsAbout": ["Yeni Türk Edebiyatı", "Türk şiiri", "Türk romanı", "Türk hikâyesi", "Türk tiyatrosu", "Metin neşri"]}</script>
 <style>
 
 :root {
@@ -174,22 +174,27 @@ body { background: #FDFDFC; }
 .serlevha a { color: #F5F2EC; text-decoration-color: rgba(169,220,228,.6); }
 .serlevha a:hover { color: var(--firuze-acik); }
 .serlevha a:focus-visible { outline-color: var(--firuze-acik); }
-.serlevha .dil { display: none; font-family: var(--sans); font-size: .98rem; color: #D5DBEA; text-decoration: none; }
 .serlevha-not { margin: 1.3rem 0 0; font-family: var(--sans); font-size: .82rem; line-height: 1.4; color: #B9C2D8; }
-nav.icindekiler { background: var(--lacivert); border: 0; border-top: 1px solid rgba(201,164,126,.5); }
-.nav-ic { max-width: var(--en); margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; gap: 2rem; }
+nav.icindekiler { background: var(--lacivert); border: 0; border-bottom: 1px solid rgba(201,164,126,.5); }
+.nav-ic { max-width: var(--en); margin: 0 auto; padding: 0 2rem; min-height: 4rem; display: flex; align-items: center; gap: 2rem; }
 nav.icindekiler ul { max-width: none; margin: 0 0 0 auto; padding: 0; gap: 1.75rem; }
 nav.icindekiler a { color: #D5DBEA; }
 nav.icindekiler a:hover { color: #fff; }
 nav.icindekiler a:focus-visible, .vitrin a:focus-visible { outline-color: var(--firuze-acik); }
-nav.icindekiler a[aria-current] { color: #fff; box-shadow: inset 0 -2px 0 var(--firuze-acik); }
-nav.icindekiler li.dil-nav { margin-left: 0; padding-left: .6rem; }
-nav.icindekiler .nav-ad { display: flex; align-items: center; gap: .75rem; padding: 0; flex: none;
-  font-family: var(--serif); font-size: 1.28rem; line-height: 1.25; color: #F5F2EC; white-space: nowrap; }
-nav.icindekiler .nav-ad img { display: block; width: 36px; height: 36px; }
+nav.icindekiler ul a[aria-current] { color: #fff; box-shadow: inset 0 -2px 0 var(--firuze-acik); }
+nav.icindekiler .nav-dil { flex: none; padding: .15rem 0 .15rem 1.5rem; margin-left: -.4rem; border-left: 1px solid rgba(213,219,234,.3); }
+nav.icindekiler .nav-ad { display: flex; align-items: center; gap: .8rem; padding: 0; flex: none; min-height: 46px;
+  font-family: var(--serif); font-size: 1.3rem; line-height: 1.25; color: #F5F2EC; white-space: nowrap; }
+nav.icindekiler .nav-ad img { display: block; width: 46px; height: 46px; }
 nav.icindekiler .nav-ad span { opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s; }
 nav.icindekiler.kaydi .nav-ad span { opacity: 1; visibility: visible; }
-@media (prefers-reduced-motion: reduce) { nav.icindekiler .nav-ad span { transition: none; } }
+@media (min-width: 68.01rem) {
+  nav.icindekiler .nav-ad { position: relative; padding-left: calc(46px + .8rem); }
+  nav.icindekiler .nav-ad img { position: absolute; left: 0; top: 0; }
+  nav.icindekiler.hazir .nav-ad img { transition: width .28s ease, height .28s ease, top .28s ease; }
+  nav.icindekiler.tepe .nav-ad img { width: 100px; height: 100px; top: 1px; }
+}
+@media (prefers-reduced-motion: reduce) { nav.icindekiler .nav-ad span, nav.icindekiler.hazir .nav-ad img { transition: none; } }
 .atla { position: absolute; left: -999rem; top: .5rem; z-index: 10; padding: .5rem .9rem; background: #fff; color: var(--lacivert);
   font-family: var(--sans); font-size: 1rem; text-decoration: none; }
 .atla:focus { left: .5rem; }
@@ -201,13 +206,14 @@ main { max-width: none; padding: 0; }
 .kusak-ic { max-width: var(--en); margin: 0 auto; padding: 4.6rem 2rem 4.9rem; display: grid;
   grid-template-columns: 15rem minmax(0, 1fr); column-gap: 4rem; align-items: start; }
 .kenar { align-self: stretch; }
-.kenar-ic { position: sticky; top: 5rem; }
+.kenar-ic { position: sticky; top: 5.9rem; }
+section { scroll-margin-top: 4rem; }
 .govde { max-width: 45rem; padding-top: .28rem; }
 .govde > :first-child { margin-top: 0; }
 .govde > :last-child { margin-bottom: 0; }
 .kusak:not(.ozgecmis) .govde > p:first-child { font-family: var(--sans); font-size: 1.02rem; line-height: 1.5; color: var(--kursun); margin-bottom: 1.5rem; padding-top: .2rem; }
 h2 { color: var(--lacivert); font-size: 1.9rem; margin: 0; }
-h3 { color: var(--lacivert); scroll-margin-top: 4.8rem; }
+h3 { color: var(--lacivert); scroll-margin-top: 5.7rem; }
 .yan-nav { list-style: none; margin: 1.9rem 0 0; padding: 0; font-family: var(--sans); font-size: .98rem; line-height: 1.3; border-top: 1px solid var(--cizgi); }
 .yan-nav a { display: flex; justify-content: space-between; align-items: baseline; gap: .8rem; padding: .55rem 0;
   text-decoration: none; color: var(--kursun); border-bottom: 1px solid var(--cizgi); }
@@ -220,9 +226,9 @@ dl.alanlar { column-gap: 0; row-gap: 0; }
 dl.alanlar dt, dl.alanlar dd { padding: .78rem 0; border-top: 1px solid var(--cizgi); }
 dl.alanlar dt { padding-top: .9rem; color: var(--lacivert); }
 dl.alanlar dt:last-of-type, dl.alanlar dd:last-of-type { border-bottom: 1px solid var(--cizgi); }
-ul.dersler li { padding: .62rem 0; }
-ul.dersler li:first-child { border-top: 1px solid var(--cizgi); }
-ul.dersler li:last-child { border-bottom: 1px solid var(--cizgi); }
+ul.ders-liste { list-style: none; margin: 0; padding: 0; }
+ul.ders-liste li + li { margin-top: .42rem; }
+ul.ders-liste .ozgun { margin-top: 0; }
 .vitrin { background: var(--lacivert); }
 .vitrin ul.raf { max-width: var(--en); margin: 0 auto; padding: 3.3rem 2rem 3.5rem; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 1.5rem; }
 .vitrin a { color: #F5F2EC; }
@@ -252,9 +258,13 @@ footer.hatime p { margin: 0; font-family: var(--serif); font-size: 1.1rem; line-
 footer.hatime p span { display: block; font-family: var(--sans); font-size: .88rem; color: #B9C2D8; }
 @media (max-width: 68rem) {
   nav.icindekiler .nav-ad span { display: none; }
-  .nav-ic { gap: 1.4rem; }
-  nav.icindekiler ul { margin: 0; flex: 1; min-width: 0; }
-  nav.icindekiler li.dil-nav { margin-left: auto; }
+  nav.icindekiler .nav-ad { min-height: 0; }
+  nav.icindekiler .nav-ad img { width: 40px; height: 40px; }
+  .nav-ic { gap: 1.3rem; min-height: 3.5rem; }
+  nav.icindekiler ul { margin: 0; flex: 1; min-width: 0; gap: 1.5rem;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 1.6rem), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 1.6rem), transparent); }
+  nav.icindekiler ul li:last-child { padding-right: 1.6rem; }
+  nav.icindekiler .nav-dil { margin-left: 0; padding-left: 1.1rem; }
 }
 @media (max-width: 60rem) {
   .nav-ic { padding: 0 1.25rem; }
@@ -288,27 +298,15 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
     -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); }
   .serlevha::after { display: none; }
   .serlevha-yazi { position: static; padding: .5rem 1.25rem 2rem; }
-  .serlevha .dil { display: block; position: absolute; right: 1.25rem; top: 1rem; z-index: 2; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.7); }
   .ikili { gap: .9rem; }
 }
 </style>
 </head>
 <body>
 <a class="atla" href="#ozgecmis">İçeriğe geç</a>
-<header class="serlevha" id="ust">
-  <img class="serlevha-foto" src="gorsel/acilis.jpg" width="1600" height="1066" alt="Arif Yılmaz; arkasında Hoca Ahmed Yesevî Türbesi’nin firuze ve lâcivert sırlı tuğla süslemeleri" fetchpriority="high">
-  <div class="serlevha-yazi">
-    <a class="dil" href="en/" hreflang="en" lang="en">English</a>
-    <h1>Arif Yılmaz</h1>
-    <p class="alan">Yeni Türk Edebiyatı</p>
-    <p class="kurum">Doç. Dr., Uşak Üniversitesi<br>İnsan ve Toplum Bilimleri Fakültesi, Türk Dili ve Edebiyatı Bölümü</p>
-    <ul class="profiller"><li><a href="https://scholar.google.com/citations?user=m_PXF6oAAAAJ">Google Akademik</a></li><li><a href="https://orcid.org/0000-0002-2652-3649">ORCID</a></li><li><a href="https://avesis.usak.edu.tr/arif.yilmaz">AVESİS</a></li><li><a href="https://dergipark.org.tr/tr/pub/@ayilmaz_1038">DergiPark</a></li><li><a href="https://publons.com/researcher/ACV-6378-2022/">Web of Science</a></li><li><a href="https://www.researchgate.net/profile/Arif-Yilmaz">ResearchGate</a></li></ul>
-    <p class="serlevha-not">Hoca Ahmed Yesevî Türbesi’nin duvar süslemeleri önünde, Türkistan.</p>
-  </div>
-</header>
-
-<nav class="icindekiler" aria-label="Sayfa bölümleri">
-<div class="nav-ic"><a class="nav-ad" href="#ust" aria-label="Arif Yılmaz, sayfa başı"><img src="gorsel/logo.png" width="36" height="36" alt=""><span>Arif Yılmaz</span></a>
+<div id="ust"></div>
+<nav class="icindekiler" aria-label="Sayfa bölümleri" data-sarkik>
+<div class="nav-ic"><a class="nav-ad" href="#ust" aria-label="Arif Yılmaz, sayfa başı"><img src="gorsel/logo.png" width="46" height="46" alt=""><span>Arif Yılmaz</span></a>
 <ul>
   <li><a href="#ozgecmis">Özgeçmiş</a></li>
   <li><a href="#alanlar">Çalışma alanları</a></li>
@@ -316,10 +314,22 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
   <li><a href="#dersler">Dersler</a></li>
   <li><a href="#tezler">Yönettiği tezler</a></li>
   <li><a href="#baglantilar">Bağlantılar</a></li>
-  <li class="dil-nav"><a href="en/" hreflang="en" lang="en">English</a></li>
 </ul>
+<a class="nav-dil" href="en/" hreflang="en" lang="en">English</a>
 </div>
 </nav>
+<script>document.currentScript.previousElementSibling.classList.add("tepe");</script>
+<header class="serlevha">
+  <img class="serlevha-foto" src="gorsel/acilis.jpg" width="1600" height="1066" alt="Arif Yılmaz; arkasında Hoca Ahmed Yesevî Türbesi’nin firuze ve lâcivert sırlı tuğla süslemeleri" fetchpriority="high">
+  <div class="serlevha-yazi">
+    <h1>Arif Yılmaz</h1>
+    <p class="alan">Yeni Türk Edebiyatı</p>
+    <p class="kurum">Doç. Dr., Uşak Üniversitesi<br>İnsan ve Toplum Bilimleri Fakültesi, Türk Dili ve Edebiyatı Bölümü</p>
+    <ul class="profiller"><li><a href="https://scholar.google.com/citations?user=m_PXF6oAAAAJ">Google Akademik</a></li><li><a href="https://orcid.org/0000-0002-2652-3649">ORCID</a></li><li><a href="https://avesis.usak.edu.tr/arif.yilmaz">AVESİS</a></li><li><a href="https://dergipark.org.tr/tr/pub/@ayilmaz_1038">DergiPark</a></li><li><a href="https://www.webofscience.com/wos/author/rid/ACV-6378-2022">Web of Science</a></li><li><a href="https://www.researchgate.net/profile/Arif-Yilmaz">ResearchGate</a></li></ul>
+    <p class="serlevha-not">Hoca Ahmed Yesevî Türbesi’nin duvar süslemeleri önünde, Türkistan.</p>
+  </div>
+</header>
+
 
 <main>
 <section id="ozgecmis" class="kusak ozgecmis" data-iz="ozgecmis">
@@ -412,11 +422,11 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
 <div class="grup" data-iz="bildiriler">
 <h3 id="bildiriler">Bildiriler <span class="sayi">12</span></h3>
 <ol class="kunye" reversed>
-<li><span class="yil">2025</span><p><span class="yazar">Arif Yılmaz ve Aysel Akdağ Uygun.</span> “Cemil Kavukçu’nun Öykülerinde Yalnızlık Tezahürleri: Ekoeleştirel Bir Okuma.” <cite>13th International New York Academic Research Congress on Social, Humanities, Administrative and Educational Sciences</cite>, <span class="nw">s. 448–460</span>. <a class="doi" href="https://doi.org/10.30546/19023.978-9952-8573-9-9.2025.9012">doi:10.30546/19023.978-9952-8573-9-9.2025.9012</a> <a class="doi" href="bildiriler/2025-cemil-kavukcunun-oykulerinde-yalnizlik-tezahurleri.pdf">Tam metin (PDF)</a></p></li>
+<li><span class="yil">2025</span><p><span class="yazar">Arif Yılmaz ve Aysel Akdağ Uygun.</span> “Cemil Kavukçu’nun Öykülerinde Yalnızlık Tezahürleri: Ekoeleştirel Bir Okuma.” <cite>13th International New York Academic Research Congress on Social, Humanities, Administrative and Educational Sciences</cite>, <span class="nw">s. 448–460</span>. <a class="doi" href="bildiriler/2025-cemil-kavukcunun-oykulerinde-yalnizlik-tezahurleri.pdf">Tam metin (PDF)</a></p></li>
 <li><span class="yil tekrar">2025</span><p><span class="yazar">Arif Yılmaz ve Aysel Akdağ Uygun.</span> “Cemil Kavukçu’nun Öykülerinde Tabiatın İyileştirici Gücü.” <cite>7. Uluslararası Karadeniz Modern Bilimsel Araştırmalar Kongresi</cite>, <span class="nw">s. 1–10</span>.</p></li>
 <li><span class="yil">2024</span><p>“Dijital Çağda Şiirin Metamorfozu: İbrahim Tenekeci’nin Instagram Paylaşımları Üzerine Bir İnceleme.” <cite>Globallashuv davrida filologiya fanlarini o‘qitishning dolzarb muammolari</cite> (Karşı, Özbekistan), <span class="nw">s. 17–26</span>.</p></li>
 <li><span class="yil tekrar">2024</span><p>“Yakın Dönem Türk Romanlarında Yabancılaşmanın Dili: Sembol.” <cite>The Development History and Modern Significance of Intercultural Dialogue</cite> (Semerkant), <span class="nw">s. 621–626</span>.</p></li>
-<li><span class="yil tekrar">2024</span><p><span class="yazar">Arif Yılmaz ve Mustafa Çiçek.</span> “Abdurrahim Karakoç’un <cite>Vur Emri</cite> Şiir Kitabında Yer Alan Halk Bilimi Öğeleri.” <cite>12. Uluslararası Başkent Sosyal, Beşeri, İdari ve Eğitim Bilimleri Kongresi</cite>, <span class="nw">s. 1086–1101</span>. <a class="doi" href="https://doi.org/10.5281/zenodo.11194274">doi:10.5281/zenodo.11194274</a> <a class="doi" href="bildiriler/2024-abdurrahim-karakocun-vur-emri-siir-kitabinda-halk-bilimi-ogeleri.pdf">Tam metin (PDF)</a></p></li>
+<li><span class="yil tekrar">2024</span><p><span class="yazar">Arif Yılmaz ve Mustafa Çiçek.</span> “Abdurrahim Karakoç’un <cite>Vur Emri</cite> Şiir Kitabında Yer Alan Halk Bilimi Öğeleri.” <cite>12. Uluslararası Başkent Sosyal, Beşeri, İdari ve Eğitim Bilimleri Kongresi</cite>, <span class="nw">s. 1086–1101</span>. <a class="doi" href="bildiriler/2024-abdurrahim-karakocun-vur-emri-siir-kitabinda-halk-bilimi-ogeleri.pdf">Tam metin (PDF)</a></p></li>
 <li><span class="yil">2023</span><p><span class="yazar">Arif Yılmaz ve Bayram Bilir.</span> “Türk Edebiyatında Toplumcu Gerçekçi Romanların Ortaya Çıkışı.” <cite>Tilshunoslik va lingvodidaktikaning istiqbolli yo‘nalishlari</cite> (Semerkant), <span class="nw">s. 234–238</span>.</p></li>
 <li><span class="yil tekrar">2023</span><p><span class="yazar">Bayram Bilir ve Arif Yılmaz.</span> “İlköğretimde Toplumcu Gerçekçi Eserler Meselesi.” <cite>Global Issues of Primary Education Development: Problem, Research</cite>, <span class="nw">s. 290–292</span>.</p></li>
 <li><span class="yil tekrar">2023</span><p><span class="yazar">Bayram Bilir ve Arif Yılmaz.</span> “Toplumcu Gerçekçi Özbek Romanlarında Rüşvet Kronotopu.” <cite>Global and National Values Along Great Silk Road: Language, Education and Culture</cite>, <span class="nw">s. 100–102</span>.</p></li>
@@ -446,13 +456,12 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
 <section id="dersler" class="kusak alt" data-iz="dersler">
 <div class="kusak-ic">
 <div class="kenar"><div class="kenar-ic"><h2>Dersler</h2></div></div>
-<div class="govde"><p>Uşak Üniversitesi Türk Dili ve Edebiyatı Bölümünde verdiği lisans dersleri:</p>
-<ul class="dersler">
-<li>Tanzimat Edebiyatı (Şiir)</li>
-<li>Servet-i Fünun Edebiyatı (Şiir)</li>
-<li>1980 Sonrası Türk Hikâyesi</li>
-<li>Akademik Türkçe Konuşma ve Dinleme (üniversite ortak seçmeli)</li>
-</ul>
+<div class="govde"><p>Uşak Üniversitesinde lisans ve lisansüstü düzeyde verdiği başlıca dersler.</p>
+<dl class="alanlar dersler">
+<dt>Lisans</dt><dd><ul class="ders-liste"><li>Tanzimat Edebiyatı (Şiir)</li><li>Servet-i Fünun Edebiyatı (Şiir)</li><li>Cumhuriyet Dönemi Türk Edebiyatı</li><li>1980 Sonrası Türk Hikâyesi</li><li>Yeni Türk Edebiyatına Giriş I–II ve Yeni Türk Edebiyatı I–IV (önceki müfredat)</li><li>Şiir Sanatı</li><li>Şiir Tahlilleri</li><li>Edebiyat Bilgi ve Teorileri I–II</li><li>Dünya Edebiyatı</li><li>Uluslararası Öğrenciler İçin Akademik Türkçe Konuşma ve Dinleme (üniversite ortak seçmeli)</li></ul></dd>
+<dt>Yüksek lisans</dt><dd><ul class="ders-liste"><li>19. Yüzyıl Yeni Türk Edebiyatı Metin Tahlilleri</li><li>19. Yüzyıl Türk Edebiyatında Hikâye ve Roman</li><li>Cumhuriyet Dönemi Türk Şiir Tahlilleri</li><li>Edebiyat Tarihi Metodolojisi</li><li>Dil ve Edebiyat Estetiği</li><li>Bilimsel Araştırma Yöntemleri</li></ul></dd>
+<dt>Doktora</dt><dd><ul class="ders-liste"><li>Yeni Türk Şiiri İncelemeleri</li><li>Yeni Türk Edebiyatında Şiir Nevinin Gelişimi</li><li>Yeni Türk Edebiyatında Nesir Nevinin Gelişimi</li><li>Edebiyat Teorisi ve Kuramları</li></ul></dd>
+</dl>
 </div>
 </div>
 </section>
@@ -481,7 +490,7 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
 <li><span class="etiket">ORCID</span> <a href="https://orcid.org/0000-0002-2652-3649">0000-0002-2652-3649</a></li>
 <li><span class="etiket">Uşak Üniversitesi AVESİS</span> <a href="https://avesis.usak.edu.tr/arif.yilmaz">avesis.usak.edu.tr/arif.yilmaz</a></li>
 <li><span class="etiket">DergiPark</span> <a href="https://dergipark.org.tr/tr/pub/@ayilmaz_1038">@ayilmaz_1038</a></li>
-<li><span class="etiket">Web of Science ResearcherID</span> <a href="https://publons.com/researcher/ACV-6378-2022/">ACV-6378-2022</a></li>
+<li><span class="etiket">Web of Science ResearcherID</span> <a href="https://www.webofscience.com/wos/author/rid/ACV-6378-2022">ACV-6378-2022</a></li>
 <li><span class="etiket">ResearchGate</span> <a href="https://www.researchgate.net/profile/Arif-Yilmaz">Arif-Yilmaz</a></li>
 </ul>
 <p class="iletisim">Uşak Üniversitesi, İnsan ve Toplum Bilimleri Fakültesi, Türk Dili ve Edebiyatı Bölümü, Uşak.</p>
@@ -509,9 +518,15 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
 <script>
 (function () {
   if (!("IntersectionObserver" in window)) return;
-  var nav = document.querySelector("nav.icindekiler"), ust = document.getElementById("ust");
-  if (!nav || !ust) return;
-  new IntersectionObserver(function (e) { nav.classList.toggle("kaydi", !e[0].isIntersecting); }).observe(ust);
+  var nav = document.querySelector("nav.icindekiler"), ad = document.querySelector(".serlevha h1");
+  if (!nav || !ad) return;
+  new IntersectionObserver(function (e) { nav.classList.toggle("kaydi", !e[0].isIntersecting); }, { rootMargin: "-64px 0px 0px 0px" }).observe(ad);
+  if (nav.hasAttribute("data-sarkik")) {
+    var tepe = function () { nav.classList.toggle("tepe", window.scrollY < 20); };
+    tepe();
+    window.addEventListener("scroll", tepe, { passive: true });
+    requestAnimationFrame(function () { requestAnimationFrame(function () { nav.classList.add("hazir"); }); });
+  }
   function izle(hedefler, baglar, kaydir) {
     var io = new IntersectionObserver(function (olaylar) {
       olaylar.forEach(function (o) {
