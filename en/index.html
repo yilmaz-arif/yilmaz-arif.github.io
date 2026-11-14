@@ -14,10 +14,17 @@
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://yilmaz-arif.github.io/en/">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:image" content="https://yilmaz-arif.github.io/gorsel/kart-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alegreya+Sans:wght@400;500&display=swap">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arif Yılmaz", "url": "https://yilmaz-arif.github.io/en/", "identifier": "https://orcid.org/0000-0002-2652-3649", "sameAs": ["https://scholar.google.com/citations?user=m_PXF6oAAAAJ", "https://orcid.org/0000-0002-2652-3649", "https://avesis.usak.edu.tr/arif.yilmaz", "https://dergipark.org.tr/tr/pub/@ayilmaz_1038", "https://publons.com/researcher/ACV-6378-2022/"], "jobTitle": "Associate Professor of Modern Turkish Literature", "affiliation": {"@type": "CollegeOrUniversity", "name": "Uşak University"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Ankara University"}, {"@type": "CollegeOrUniversity", "name": "Gazi University"}, {"@type": "CollegeOrUniversity", "name": "Yüzüncü Yıl University"}], "knowsAbout": ["Modern Turkish literature", "Turkish poetry", "Turkish novel", "Turkish short story", "Turkish drama", "Textual scholarship"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arif Yılmaz", "image": "https://yilmaz-arif.github.io/gorsel/arif-yilmaz.jpg", "url": "https://yilmaz-arif.github.io/en/", "identifier": "https://orcid.org/0000-0002-2652-3649", "sameAs": ["https://www.researchgate.net/profile/Arif-Yilmaz", "https://scholar.google.com/citations?user=m_PXF6oAAAAJ", "https://orcid.org/0000-0002-2652-3649", "https://avesis.usak.edu.tr/arif.yilmaz", "https://dergipark.org.tr/tr/pub/@ayilmaz_1038", "https://publons.com/researcher/ACV-6378-2022/"], "jobTitle": "Associate Professor of Modern Turkish Literature", "affiliation": {"@type": "CollegeOrUniversity", "name": "Uşak University"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Ankara University"}, {"@type": "CollegeOrUniversity", "name": "Gazi University"}, {"@type": "CollegeOrUniversity", "name": "Yüzüncü Yıl University"}], "knowsAbout": ["Modern Turkish literature", "Turkish poetry", "Turkish novel", "Turkish short story", "Turkish drama", "Textual scholarship"]}</script>
 <style>
 
 :root {
@@ -144,15 +151,73 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
   ol.kunye li { break-inside: avoid; }
 }
 
+
+/* Türkistan teması */
+:root { --lacivert: #16224F; --firuze: #0F7286; --firuze-acik: #A9DCE4; --kum: #C9A47E; --surh: #0F7286; }
+body { background: #FDFDFC; }
+.serlevha { position: relative; overflow: hidden; color: #F5F2EC; min-height: 35rem; display: flex;
+  background-color: var(--lacivert); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='%233FB4C8' opacity='.30'%3E%3Crect x='6.0' y='26.5' width='4' height='11'/%3E%3Crect x='14.0' y='18.5' width='4' height='11'/%3E%3Crect x='14.0' y='34.5' width='4' height='11'/%3E%3Crect x='22.0' y='10.5' width='4' height='11'/%3E%3Crect x='22.0' y='42.5' width='4' height='11'/%3E%3Crect x='30.0' y='2.5' width='4' height='11'/%3E%3Crect x='30.0' y='50.5' width='4' height='11'/%3E%3Crect x='38.0' y='10.5' width='4' height='11'/%3E%3Crect x='38.0' y='42.5' width='4' height='11'/%3E%3Crect x='46.0' y='18.5' width='4' height='11'/%3E%3Crect x='46.0' y='34.5' width='4' height='11'/%3E%3Crect x='54.0' y='26.5' width='4' height='11'/%3E%3C/g%3E%3C/svg%3E"); background-size: 64px 64px; }
+.serlevha-foto { position: absolute; top: 0; right: 0; width: 64%; height: 100%; object-fit: cover; object-position: 58% 26%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 34%); mask-image: linear-gradient(to right, transparent 0, #000 34%); }
+.serlevha::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to right, rgba(22,34,79,.92) 0, rgba(22,34,79,.55) 32%, rgba(22,34,79,0) 56%); }
+.serlevha-yazi { position: relative; z-index: 1; width: 100%; max-width: 74rem; margin: 0 auto; padding: 4.5rem 2rem 3.2rem;
+  display: flex; flex-direction: column; justify-content: flex-end; }
+.serlevha-yazi > * { max-width: 31rem; }
+.serlevha h1 { font-weight: 500; font-size: clamp(3rem, 6.2vw, 5.2rem); line-height: 1; margin: 0 0 1rem; }
+.serlevha .alan { font-style: italic; font-size: clamp(1.3rem, 2.6vw, 1.7rem); margin: 0 0 .9rem; color: var(--firuze-acik); }
+.serlevha .kurum { font-family: var(--sans); font-size: 1rem; line-height: 1.5; margin: 0 0 1.6rem; color: #D5DBEA; }
+.serlevha .profiller { list-style: none; margin: 0; padding: 1.1rem 0 0; display: flex; flex-wrap: wrap; gap: .35rem 1.3rem;
+  font-family: var(--sans); font-size: .98rem; border-top: 1px solid rgba(201,164,126,.55); }
+.serlevha a { color: #F5F2EC; text-decoration-color: rgba(169,220,228,.6); }
+.serlevha a:hover { color: var(--firuze-acik); }
+.serlevha a:focus-visible { outline-color: var(--firuze-acik); }
+.serlevha .dil { position: absolute; top: 1.2rem; left: 2rem; font-family: var(--sans); font-size: .98rem; color: #D5DBEA; text-decoration: none; }
+.serlevha-not { margin: 1.3rem 0 0; font-family: var(--sans); font-size: .82rem; line-height: 1.4; color: #B9C2D8; }
+nav.icindekiler { background: #FDFDFC; border-top: 0; }
+nav.icindekiler a { color: var(--lacivert); }
+h2 { color: var(--lacivert); }
+h2::after { content: ""; display: block; width: 2.6rem; height: 3px; margin-top: .7rem;
+  background: linear-gradient(to right, var(--firuze) 0 50%, var(--kum) 50% 100%); }
+.ikili { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin: 2.4rem 0 .5rem; }
+.ikili figure, .galeri figure { margin: 0; }
+.ikili img { width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; display: block; }
+figcaption, .susleme-not { font-family: var(--sans); font-size: .88rem; line-height: 1.4; color: var(--kursun); margin-top: .5rem; }
+ul.raf { list-style: none; padding: 0; margin: 1.8rem 0 2.4rem; display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.2rem, 1fr)); gap: 1.6rem 1.2rem; }
+ul.raf a { text-decoration: none; display: block; }
+ul.raf img { width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block;
+  box-shadow: 0 1px 2px rgba(22,34,79,.25), 0 6px 14px -8px rgba(22,34,79,.45); }
+ul.raf .raf-yil { display: block; margin-top: .55rem; font-family: var(--sans); font-size: .85rem; color: var(--kursun); }
+ul.raf .raf-ad { display: block; font-size: .98rem; line-height: 1.3; }
+footer.hatime { max-width: none; padding: 0; margin-top: 2rem; }
+footer.hatime .serit-foto { display: block; width: 100%; height: 84px; object-fit: cover; }
+footer.hatime .hatime-zemin { background: var(--lacivert); }
+footer.hatime .hatime-ic { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 2.6rem; display: flex; align-items: center; gap: 1.2rem; }
+footer.hatime p { margin: 0; font-family: var(--serif); font-size: 1.1rem; line-height: 1.5; color: #F5F2EC; }
+footer.hatime p span { display: block; font-family: var(--sans); font-size: .88rem; color: #B9C2D8; }
+@media (max-width: 52rem) {
+  .serlevha { display: block; min-height: 0; }
+  .serlevha-foto { position: static; width: 100%; height: 19rem; object-position: 64% 22%;
+    -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); }
+  .serlevha::after { display: none; }
+  .serlevha-yazi { position: static; padding: .5rem 1.25rem 2rem; }
+  .serlevha .dil { left: auto; right: 1.25rem; top: 1rem; z-index: 2; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.7); }
+  .ikili { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
-<header class="ic-kapak">
-  <a class="dil" href="../" hreflang="tr" lang="tr">Türkçe</a>
-  <h1>Arif Yılmaz</h1>
-  <hr class="surh-cizgi">
-  <p class="alan">Modern Turkish Literature</p>
-  <p class="kurum"><span>Associate Professor, Uşak University</span><span>Faculty of Humanities and Social Sciences, Department of Turkish Language and Literature</span></p>
+<header class="serlevha">
+  <img class="serlevha-foto" src="../gorsel/acilis.jpg" width="1600" height="1066" alt="Arif Yılmaz; behind him, the turquoise and cobalt glazed brickwork of the Mausoleum of Khoja Ahmed Yasawi" fetchpriority="high">
+  <div class="serlevha-yazi">
+    <a class="dil" href="../" hreflang="tr" lang="tr">Türkçe</a>
+    <h1>Arif Yılmaz</h1>
+    <p class="alan">Modern Turkish Literature</p>
+    <p class="kurum">Associate Professor, Uşak University<br>Faculty of Humanities and Social Sciences, Department of Turkish Language and Literature</p>
+    <ul class="profiller"><li><a href="https://scholar.google.com/citations?user=m_PXF6oAAAAJ">Google Scholar</a></li><li><a href="https://orcid.org/0000-0002-2652-3649">ORCID</a></li><li><a href="https://avesis.usak.edu.tr/arif.yilmaz">AVESİS</a></li><li><a href="https://dergipark.org.tr/tr/pub/@ayilmaz_1038">DergiPark</a></li><li><a href="https://publons.com/researcher/ACV-6378-2022/">Web of Science</a></li><li><a href="https://www.researchgate.net/profile/Arif-Yilmaz">ResearchGate</a></li></ul>
+    <p class="serlevha-not">In front of the wall decoration of the Mausoleum of Khoja Ahmed Yasawi, Turkistan.</p>
+  </div>
 </header>
 
 <nav class="icindekiler" aria-label="Page sections">
@@ -176,6 +241,10 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
 <p>He has been at Uşak University since 2012 and became associate professor in 2018. He has served as vice director of the Institute of Social Sciences, head of the Division of Modern Turkish Literature and head of the Department of Turkish Language and Literature. In the fall semester of 2024–2025 he taught as a visiting professor at Samarkand State Institute of Foreign Languages, Uzbekistan.</p>
 <p>His research covers Turkish poetry, the novel, the short story and drama from the Tanzimat period to the present, together with textual scholarship. He has prepared critical editions of Sabahattin Kudret Aksal’s stories, poems and prose, of Niyazi Yıldırım Gençosmanoğlu’s collected poems and of Halid Ziya Uşaklıgil’s <cite>Bir Acı Hikâye</cite>. For his work on Aksal he received the Jury’s Special Award of the 2019 Sabahattin Kudret Aksal Literary Prize.</p>
 
+<div class="ikili">
+<figure><img src="../gorsel/kitaplik.jpg" width="640" height="800" alt="Arif Yılmaz in front of a shelf holding his books and an award plaque" loading="lazy"><figcaption>With his books and the plaque of the 2019 Sabahattin Kudret Aksal Literary Award.</figcaption></figure>
+<figure><img src="../gorsel/semerkant.jpg" width="640" height="800" alt="Arif Yılmaz in front of the Amir Timur monument" loading="lazy"><figcaption>Samarkand, in front of the Amir Timur monument.</figcaption></figure>
+</div>
 </section>
 
 <section id="research">
@@ -194,6 +263,7 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
 <section id="publications">
 <h2>Publications</h2>
 <p>Publications are listed from the most recent; co-authors appear in the order of publication. Each entry gives the original Turkish citation followed by the English title. Titles without brackets are the English titles published with the work; titles in square brackets are translations. Preview pages of the books (cover, contents, introduction, conclusion and bibliography) and the full texts of several papers can be downloaded as PDF files.</p>
+<ul class="raf" aria-label="Book covers"><li><a href="../kitaplar/2025-bir-aci-hikaye.pdf"><img src="../gorsel/kapak/2025-bir-aci-hikaye.jpg" alt="Cover of Bir Acı Hikâye" loading="lazy"><span class="raf-yil">2025</span><span class="raf-ad" lang="tr">Bir Acı Hikâye</span></a></li><li><a href="../kitaplar/2023-destanlar-burcu.pdf"><img src="../gorsel/kapak/2023-destanlar-burcu.jpg" alt="Cover of Destanlar Burcu" loading="lazy"><span class="raf-yil">2023</span><span class="raf-ad" lang="tr">Destanlar Burcu</span></a></li><li><a href="../kitaplar/2023-alperenler-destani.pdf"><img src="../gorsel/kapak/2023-alperenler-destani.jpg" alt="Cover of Alperenler Destanı" loading="lazy"><span class="raf-yil">2023</span><span class="raf-ad" lang="tr">Alperenler Destanı</span></a></li><li><a href="../kitaplar/2023-dede-korkuttan-bogac-han-ve-salur-kazan-destanlari.pdf"><img src="../gorsel/kapak/2023-dede-korkuttan-bogac-han-ve-salur-kazan-destanlari.jpg" alt="Cover of Dede Korkut’tan Boğaç Han ve Salur Kazan" loading="lazy"><span class="raf-yil">2023</span><span class="raf-ad" lang="tr">Dede Korkut’tan Boğaç Han ve Salur Kazan</span></a></li><li><a href="../kitaplar/2018-aksal-denemeler-konusmalar.pdf"><img src="../gorsel/kapak/2018-aksal-denemeler-konusmalar.jpg" alt="Cover of Denemeler, Konuşmalar" loading="lazy"><span class="raf-yil">2018</span><span class="raf-ad" lang="tr">Denemeler, Konuşmalar</span></a></li><li><a href="../kitaplar/2012-seyh-vasfi-ve-muallim-naci-ile-mektuplari.pdf"><img src="../gorsel/kapak/2012-seyh-vasfi-ve-muallim-naci-ile-mektuplari.jpg" alt="Cover of Şeyh Vasfi ve Muallim Naci ile Mektupları" loading="lazy"><span class="raf-yil">2012</span><span class="raf-ad" lang="tr">Şeyh Vasfi ve Muallim Naci ile Mektupları</span></a></li><li><a href="../kitaplar/2012-kemal-bilbasarin-oykuculugu.pdf"><img src="../gorsel/kapak/2012-kemal-bilbasarin-oykuculugu.jpg" alt="Cover of Kemal Bilbaşar’ın Öykücülüğü" loading="lazy"><span class="raf-yil">2012</span><span class="raf-ad" lang="tr">Kemal Bilbaşar’ın Öykücülüğü</span></a></li><li><a href="../kitaplar/2010-aksal-hayati-sanati-ve-siirleri.pdf"><img src="../gorsel/kapak/2010-aksal-hayati-sanati-ve-siirleri.jpg" alt="Cover of Sabahattin Kudret Aksal: Hayatı, Sanatı ve Şiirleri" loading="lazy"><span class="raf-yil">2010</span><span class="raf-ad" lang="tr">Sabahattin Kudret Aksal: Hayatı, Sanatı ve Şiirleri</span></a></li></ul>
 <h3 id="books">Authored books <span class="sayi">4</span></h3>
 <ol class="kunye" reversed>
 <li><span class="yil">2012</span><p><cite>Kemal Bilbaşar’ın Öykücülüğü</cite>. Uşak: Türkçe Mevsimi. <a class="doi" href="../kitaplar/2012-kemal-bilbasarin-oykuculugu.pdf">Preview pages (PDF)</a><span class="ceviri">[The Short Fiction of Kemal Bilbaşar]</span></p></li>
@@ -299,13 +369,16 @@ footer { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; font-fami
 <li><span class="etiket">AVESİS (Uşak University)</span> <a href="https://avesis.usak.edu.tr/arif.yilmaz">avesis.usak.edu.tr/arif.yilmaz</a></li>
 <li><span class="etiket">DergiPark</span> <a href="https://dergipark.org.tr/tr/pub/@ayilmaz_1038">@ayilmaz_1038</a></li>
 <li><span class="etiket">Web of Science ResearcherID</span> <a href="https://publons.com/researcher/ACV-6378-2022/">ACV-6378-2022</a></li>
+<li><span class="etiket">ResearchGate</span> <a href="https://www.researchgate.net/profile/Arif-Yilmaz">Arif-Yilmaz</a></li>
 </ul>
 <p class="iletisim">Uşak University, Faculty of Humanities and Social Sciences, Department of Turkish Language and Literature, Uşak, Türkiye.</p>
 </section>
 </main>
 
-<footer>
-<p>Last updated: 14 November 2026</p>
+<footer class="hatime">
+<img class="serit-foto" src="../gorsel/serit.jpg" alt="" loading="lazy">
+<div class="hatime-zemin"><div class="hatime-ic"><img src="../gorsel/logo.png" alt="Arif Yılmaz logo" width="84" height="84">
+<p>Arif Yılmaz<span>Last updated: 14 November 2026</span><span>Band: wall decoration of the Mausoleum of Khoja Ahmed Yasawi. Photo: Arif Yılmaz.</span></p></div></div>
 </footer>
 </body>
 </html>
