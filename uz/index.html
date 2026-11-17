@@ -186,13 +186,17 @@ nav.icindekiler .nav-dil { flex: none; padding: .15rem 0 .15rem 1.5rem; margin-l
 nav.icindekiler .nav-ad { display: flex; align-items: center; gap: .8rem; padding: 0; flex: none; min-height: 46px;
   font-family: var(--serif); font-size: 1.3rem; line-height: 1.25; color: #F5F2EC; white-space: nowrap; }
 nav.icindekiler .nav-ad img { display: block; width: 46px; height: 46px; }
+nav.icindekiler .nav-ad .logo-tam { display: none; }
 nav.icindekiler .nav-ad span { opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s; }
 nav.icindekiler.kaydi .nav-ad span { opacity: 1; visibility: visible; }
 @media (min-width: 68.01rem) {
   nav.icindekiler .nav-ad { position: relative; padding-left: calc(46px + .8rem); }
   nav.icindekiler .nav-ad img { position: absolute; left: 0; top: 0; }
-  nav.icindekiler.hazir .nav-ad img { transition: width .28s ease, height .28s ease, top .28s ease; }
-  nav.icindekiler.tepe .nav-ad img { width: 100px; height: 100px; top: 1px; }
+  nav.icindekiler .nav-ad .logo-tam { display: block; opacity: 0; filter: drop-shadow(0 5px 12px rgba(4,9,28,.45)); }
+  nav.icindekiler.hazir .nav-ad img { transition: width .28s ease, height .28s ease, top .28s ease, opacity .22s ease; }
+  nav.icindekiler.tepe .nav-ad img { width: 128px; height: 128px; top: 2px; }
+  nav.icindekiler.tepe .nav-ad .logo-tam { opacity: 1; }
+  nav.icindekiler.tepe .nav-ad .logo-kucuk { opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) { nav.icindekiler .nav-ad span, nav.icindekiler.hazir .nav-ad img { transition: none; } }
 .atla { position: absolute; left: -999rem; top: .5rem; z-index: 10; padding: .5rem .9rem; background: #fff; color: var(--lacivert);
@@ -253,7 +257,8 @@ ul.raf .raf-ad { display: block; font-size: .98rem; line-height: 1.3; }
 footer.hatime { max-width: none; padding: 0; margin-top: 0; border-top: 0; }
 footer.hatime .serit-foto { display: block; width: 100%; height: 84px; object-fit: cover; }
 footer.hatime .hatime-zemin { background: var(--lacivert); }
-footer.hatime .hatime-ic { max-width: var(--en); margin: 0 auto; padding: 2rem 2rem 2.6rem; display: flex; align-items: center; gap: 1.2rem; }
+footer.hatime .hatime-ic { max-width: var(--en); margin: 0 auto; padding: 2rem 2rem 2.6rem; display: flex; align-items: center; gap: 1.4rem; }
+footer.hatime .hatime-ic > img { flex: none; width: 104px; height: 104px; }
 footer.hatime p { margin: 0; font-family: var(--serif); font-size: 1.1rem; line-height: 1.5; color: #F5F2EC; }
 footer.hatime p span { display: block; font-family: var(--sans); font-size: .88rem; color: #B9C2D8; }
 @media (max-width: 68rem) {
@@ -302,14 +307,16 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
 }
 
 .dil-secici { display: inline-flex; align-items: center; gap: 2px; padding: 3px; flex: none;
-  border-radius: 999px; background: rgba(8,15,40,.35); border: 1px solid rgba(213,219,234,.3); }
+  border-radius: 999px; background: rgba(4,9,28,.55); border: 1px solid rgba(255,255,255,.12);
+  box-shadow: inset 0 2px 5px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.08); }
 .dil-secici a.dil-sec, .dil-secici .etkin { display: inline-flex; align-items: center; gap: .42rem; margin: 0;
   padding: .3rem .62rem .3rem .45rem; border-radius: 999px; line-height: 1; text-decoration: none; box-shadow: none;
   font-family: "Alegreya Sans", system-ui, sans-serif; font-size: .8rem; font-weight: 500; letter-spacing: .07em;
   color: #D5DBEA; transition: background-color .2s, color .2s; }
-.dil-secici a.dil-sec:hover { background: rgba(169,220,228,.18); color: #fff; }
+.dil-secici a.dil-sec:hover { background: rgba(255,255,255,.1); color: #fff; }
 .dil-secici a.dil-sec:focus-visible { outline: 2px solid #A9DCE4; outline-offset: 1px; }
-.dil-secici .etkin { background: #F5F2EC; color: #16224F; }
+.dil-secici .etkin { color: #16224F; background: linear-gradient(180deg, #FFFFFF 0%, #EDEFF4 100%);
+  box-shadow: inset 0 1px 0 #fff, 0 2px 0 #8C95AC, 0 3px 6px rgba(0,0,0,.35); }
 .dil-secici .bayrak { display: block; width: 21px; height: 14px; flex: none; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,.28); }
 .dil-secici .etkin .bayrak { box-shadow: 0 0 0 1px rgba(22,34,79,.22); }
 .dil-secici .gizli { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -318,14 +325,27 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
   .dil-secici .dil-kod { display: none; }
 }
 
-.nav-ic { gap: 1.5rem; }
-nav.icindekiler ul { gap: .35rem; overflow-x: auto; scrollbar-width: none; }
+.nav-ic { gap: 1.2rem; }
+nav.icindekiler ul { gap: .35rem; padding: 5px 0 8px; overflow-x: auto; scrollbar-width: none; }
 nav.icindekiler ul::-webkit-scrollbar { display: none; }
-nav.icindekiler ul a { padding: .4rem .74rem; font-size: .97rem; border: 1px solid rgba(213,219,234,.26); border-radius: 999px; line-height: 1.2;
-  white-space: nowrap; transition: background-color .2s, border-color .2s, color .2s; }
-nav.icindekiler ul a:hover { background: rgba(169,220,228,.14); border-color: rgba(169,220,228,.6); color: #fff; }
-nav.icindekiler ul a[aria-current] { background: #A9DCE4; border-color: #A9DCE4; color: #16224F; box-shadow: none; }
+/* Menü düğmeleri: üstten ışık alan, alt kenarı kalın, basınca çöken kabartma düğme */
+nav.icindekiler ul a { padding: .42rem .7rem .44rem; font-size: .97rem; line-height: 1.2; white-space: nowrap; text-decoration: none;
+  color: #E9EDF6; border-radius: 999px; border: 1px solid rgba(255,255,255,.15);
+  background: linear-gradient(180deg, #2E3F7C 0%, #213068 55%, #1B2858 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.24), 0 2px 0 #0A1233, 0 3px 7px rgba(0,0,0,.38);
+  text-shadow: 0 1px 1px rgba(0,0,0,.35);
+  transition: transform .12s ease, box-shadow .12s ease, border-color .2s, color .2s; }
+nav.icindekiler ul a:hover { color: #fff; border-color: rgba(169,220,228,.6);
+  background: linear-gradient(180deg, #3A4D92 0%, #2A3C7C 55%, #23346E 100%);
+  transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 3px 0 #0A1233, 0 6px 12px rgba(0,0,0,.42); }
+nav.icindekiler ul a:active { transform: translateY(2px); box-shadow: inset 0 2px 4px rgba(0,0,0,.45), 0 0 0 #0A1233, 0 1px 2px rgba(0,0,0,.3); }
+nav.icindekiler ul a[aria-current] { color: #10204A; text-shadow: 0 1px 0 rgba(255,255,255,.45); border-color: #C3E8EE;
+  background: linear-gradient(180deg, #DDF4F7 0%, #AFDFE7 58%, #96D0DA 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.85), 0 2px 0 #4D8D98, 0 3px 7px rgba(0,0,0,.38); }
+nav.icindekiler ul a:focus-visible { outline: 2px solid #A9DCE4; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { nav.icindekiler ul a { transition: none; } nav.icindekiler ul a:hover { transform: none; } }
 nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; padding: 0 0 0 1rem; margin-left: 0; border-left: 1px solid rgba(213,219,234,.3); }
+@media (max-width: 75rem) { nav.icindekiler ul a { padding-left: .6rem; padding-right: .6rem; } }
 @media (max-width: 68rem) { .nav-ic { gap: 1.1rem; } nav.icindekiler .nav-dil { padding-left: .8rem; } }
 @media (max-width: 30rem) { .serlevha .profiller { grid-template-columns: repeat(2, max-content); } }
 @media (max-width: 40rem) {
@@ -338,7 +358,7 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <a class="atla" href="#tarjimai-hol">Asosiy matnga oʻtish</a>
 <div id="ust"></div>
 <nav class="icindekiler" aria-label="Sahifa boʻlimlari" data-sarkik>
-<div class="nav-ic"><a class="nav-ad" href="#ust" aria-label="Arif Yılmaz, sahifa boshi"><img src="../gorsel/logo.png" width="46" height="46" alt=""><span>Arif Yılmaz</span></a>
+<div class="nav-ic"><a class="nav-ad" href="#ust" aria-label="Arif Yılmaz, sahifa boshi"><img class="logo-kucuk" src="../gorsel/logo-isaret.svg" width="46" height="46" alt=""><img class="logo-tam" src="../gorsel/logo.svg" width="46" height="46" alt=""><span>Arif Yılmaz</span></a>
 <ul>
   <li><a href="#tarjimai-hol">Tarjimai hol</a></li>
   <li><a href="#tadqiqot">Tadqiqot sohalari</a></li>
@@ -368,7 +388,7 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <div class="kusak-ic">
 <div class="kenar"><div class="kenar-ic"><h2>Tarjimai hol</h2></div></div>
 <div class="govde"><p>Arif Yılmaz Uşak universiteti Gumanitar va ijtimoiy fanlar fakulteti Turk tili va adabiyoti kafedrasining yangi turk adabiyoti boʻlimida dars beradi. U 1992-yilda Yüzüncü Yıl universitetini tamomlagan. Gazi universitetida professor Sadık Kemal Tural rahbarligida Niyazi Yıldırım Gençosmanoğlu haqidagi <a href="../tezler/1996-gencosmanoglu-yuksek-lisans-tezi.pdf">magistrlik dissertatsiyasini</a> (1996), Ankara universitetida professor Ramazan Kaplan rahbarligida Sabahattin Kudret Aksal haqidagi <a href="../tezler/2004-aksal-doktora-tezi.pdf">doktorlik dissertatsiyasini</a> (2004) yozgan.</p>
-<p>Celâl Bayar universitetida (1993–1999) va Ankara universitetida (1999–2005) ilmiy assistent boʻlib ishlagan. Shu yillarda bir muddat Viskonsin-Medison universitetining Yaqin Sharq tadqiqotlari dasturida boʻlgan (1996–1997). 2005-yilda Turkiya Milliy taʼlim vazirligi topshirigʻi bilan Halabga borib, Turkiya Respublikasining Halabdagi Bosh konsulligi qoshidagi Madaniyat markazini tashkil etish ishlariga direktor sifatida rahbarlik qilgan. 2005-yil sentabridan boshlab xuddi shu topshiriq bilan Halab universiteti Adabiyot fakultetida Turk tili va adabiyoti kafedrasini tashkil etishda ham qatnashgan (2005–2007). Gaziantep universitetida (2008–2012) Turk tili taʼlimi kafedrasini boshqargan va Turk tilini oʻqitish amaliy-tadqiqot markazining asoschi direktori boʻlgan.</p>
+<p>Celal Bayar universitetida (1993–1999) va Ankara universitetida (1999–2005) ilmiy assistent boʻlib ishlagan. Shu davrda 1996–1997-oʻquv yilida Viskonsin-Medison universitetining Yaqin Sharq tadqiqotlari dasturida taklif etilgan tadqiqotchi boʻlgan. 2005-yilda Turkiya Milliy taʼlim vazirligi topshirigʻi bilan Halabga borib, Turkiya Respublikasining Halabdagi Bosh konsulligi qoshidagi Madaniyat markazini tashkil etish ishlariga direktor sifatida rahbarlik qilgan. 2005-yil sentabridan boshlab xuddi shu topshiriq bilan Halab universiteti Adabiyot fakultetida Turk tili va adabiyoti kafedrasini tashkil etishda ham qatnashgan (2005–2007). Gaziantep universitetida (2008–2012) Turk tili taʼlimi kafedrasini boshqargan va Turk tilini oʻqitish amaliy-tadqiqot markazining asoschi direktori boʻlgan.</p>
 <p>2012-yildan beri Uşak universitetida ishlaydi. 2018-yilda dotsent unvonini olgan. Ijtimoiy fanlar instituti direktori oʻrinbosari, yangi turk adabiyoti boʻlimi mudiri hamda Turk tili va adabiyoti kafedrasi mudiri lavozimlarida ishlagan. 2024–2025-oʻquv yilining kuzgi semestrida Oʻzbekistonda, Samarqand davlat chet tillar institutida taklif etilgan oʻqituvchi sifatida dars bergan.</p>
 <p>Uning tadqiqotlari Tanzimat davridan bugungi kungacha boʻlgan turk sheʼriyati, romani, hikoyasi va dramaturgiyasi hamda matnshunoslikka qaratilgan. Sabahattin Kudret Aksalning hikoya, sheʼr va nasriy asarlarini, Niyazi Yıldırım Gençosmanoğluning barcha sheʼrlarini hamda Halid Ziya Uşaklıgilning <cite>Bir Acı Hikâye</cite> asarini tanqidiy nashrga tayyorlagan. Aksal haqidagi ishlari uchun 2019-yilgi Sabahattin Kudret Aksal adabiy mukofoti doirasida hakamlar hayʼatining maxsus mukofotiga sazovor boʻlgan.</p>
 </div>
@@ -382,10 +402,10 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <dt>Sheʼriyat</dt><dd>Tanzimat va Servet-i Fünun sheʼriyati, Mehmet Âkif Ersoy, Orhan Veli va Garip oqimi, Sabahattin Kudret Aksal, Niyazi Yıldırım Gençosmanoğlu, Abdurrahim Karakoç va raqamli davr sheʼriyati</dd>
 <dt>Roman</dt><dd>Peyami Safa, Kemal Tahir, Dinçer Sümer, fantastika va sehrli realizm, roman oʻquvchisi</dd>
 <dt>Hikoya</dt><dd>Orhan Kemal, Kemal Bilbaşar, Füruzan, Cemil Kavukçu va 1980-yillardan keyingi turk hikoyachiligi</dd>
-<dt>Dramaturgiya</dt><dd>Epik teatr, Recep Bilginer, Vasıf Öngörenning <cite>Asiye Nasıl Kurtulur?</cite> pyesasi</dd>
-<dt>Matnshunoslik</dt><dd>Tanqidiy nashr, adabiy maktublar, Aksal va Gençosmanoğlu asarlari toʻplamlari</dd>
-<dt>Metodologiya</dt><dd>Qadriyatlar semiotikasi, makon nazariyalari, psixoanalitik va ekotanqidiy oʻqish</dd>
-<dt>Qiyosiy tadqiqot</dt><dd>Turk va oʻzbek adabiyotlarida sotsialistik realizm</dd>
+<dt>Dramaturgiya</dt><dd>Epik teatr, Vasıf Öngören, Recep Bilginer va Respublika davri turk dramaturgiyasi</dd>
+<dt>Matnshunoslik</dt><dd>Tanqidiy nashr, adabiy maktublar, Sabahattin Kudret Aksal, Niyazi Yıldırım Gençosmanoğlu va Halid Ziya Uşaklıgil asarlarining nashrlari</dd>
+<dt>Nazariya va metodologiya</dt><dd>Mafkuraviy va semiotik tahlil, makon nazariyalari, psixoanalitik tanqid va ekotanqid</dd>
+<dt>Qiyosiy adabiyotshunoslik</dt><dd>Turk va oʻzbek adabiyotlarida sotsialistik realizm</dd>
 </dl>
 </div>
 </div>
@@ -394,11 +414,11 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <section id="adiblar" class="kusak" data-iz="adiblar">
 <div class="kusak-ic">
 <div class="kenar"><div class="kenar-ic"><h2>Adiblar sahifalari</h2></div></div>
-<div class="govde"><p>Uch adib haqida yillar davomida olib borilgan ishlar shu sahifalarda jamlandi. Nashrlar bilan birga ovoz va video yozuvlari, qoʻlyozmalar va fotosuratlar ham berildi.</p>
+<div class="govde"><p>Mehmet Âkif Ersoy, Sabahattin Kudret Aksal va Niyazi Yıldırım Gençosmanoğlu Arif Yılmazning ilmiy faoliyatida alohida oʻrin tutgan hamda koʻp yillar davomida tadqiq etilgan uch ijodkordir. Ushbu sahifalarda mazkur adiblar ijodi boʻyicha tayyorlangan dissertatsiya, monografiya, maqola va tanqidiy nashrlar bilan bir qatorda audio va video yozuvlar, sheʼr qoralamasi, maktub hamda fotosuratlar jamlangan.</p>
 <dl class="alanlar yazar-dosyalari">
 <dt><a href="yazarlar/mehmet-akif-ersoy.html">Mehmet Âkif Ersoy</a></dt><dd>Âkif sheʼriyatida xalq tili va xalq madaniyati haqidagi maqolalar, Istiqlol marshiga bagʻishlangan maʼruza hamda shoir otasining qishlogʻi Šušicadan (Kosovo) fotosuratlar.</dd>
 <dt><a href="yazarlar/sabahattin-kudret-aksal.html">Sabahattin Kudret Aksal</a></dt><dd>Doktorlik dissertatsiyasi, monografiya, Yapı Kredi Yayınları nashriyotidagi tanqidiy nashrlar va maqolalar bilan birga Aksalning oʻz ovozida bir sheʼri va 2019-yilgi Sabahattin Kudret Aksal adabiy mukofoti.</dd>
-<dt><a href="yazarlar/niyazi-yildirim-gencosmanoglu.html">Niyazi Yıldırım Gençosmanoğlu</a></dt><dd>Magistrlik dissertatsiyasi, monografiya, sheʼriy kitoblarining tanqidiy nashrlari va maqolalar bilan birga shoirning oʻz ovozida sheʼrlari va qoʻlyozmalari.</dd>
+<dt><a href="yazarlar/niyazi-yildirim-gencosmanoglu.html">Niyazi Yıldırım Gençosmanoğlu</a></dt><dd>Magistrlik dissertatsiyasi, monografiya, sheʼriy kitoblarining tanqidiy nashrlari va maqolalar bilan birga shoirning oʻz ovozida sheʼrlari va sheʼr qoralamasi.</dd>
 </dl>
 </div>
 </div>
@@ -410,26 +430,26 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <div class="kusak-ic">
 <div class="kenar"><div class="kenar-ic"><h2>Nashrlar</h2>
 <nav aria-label="Nashr turlari"><ul class="yan-nav"><li><a href="#kitoblar"><span>Kitoblar</span> <span class="sayi">4</span></a></li><li><a href="#tanqidiy-nashrlar"><span>Tanqidiy nashrlar va nashrga tayyorlangan asarlar</span> <span class="sayi">12</span></a></li><li><a href="#boblar"><span>Kitob boblari va ensiklopediya maqolalari</span> <span class="sayi">6</span></a></li><li><a href="#maqolalar"><span>Taqrizli jurnallardagi maqolalar</span> <span class="sayi">16</span></a></li><li><a href="#maruzalar"><span>Ilmiy anjuman maʼruzalari</span> <span class="sayi">12</span></a></li><li><a href="#boshqa"><span>Boshqa ishlar</span> <span class="sayi">9</span></a></li></ul></nav></div></div>
-<div class="govde"><p>Nashrlar eng yangisidan boshlab berilgan. Hammualliflikda yozilgan ishlarda mualliflar nashrdagi tartibda koʻrsatilgan. Bibliografik maʼlumotlar asl turkcha shaklida qoldirildi. Kitoblarning muqova, mundarija, kirish, xulosa va adabiyotlar sahifalarini, maqolalarning annotatsiyasi va toʻliq matnini hamda ayrim maʼruzalarning toʻliq matnini PDF shaklida yuklab olish mumkin.</p>
+<div class="govde"><p>Nashrlar turlariga koʻra ajratilgan sarlavhalar ostida yangidan eskiga qarab joylashtirilgan, hammualliflikdagi ishlarda nashrdagi mualliflar ketma-ketligi saqlangan. Bibliografik maʼlumotlar asl turkcha shaklida keltirilgan. Maqola va kitob boblarining bibliografik sahifalari orqali annotatsiyalar hamda toʻliq matnlar bilan tanishish mumkin. Kitoblarning namuna sahifalari (muqova, mundarija, kirish, xulosa va foydalanilgan adabiyotlar roʻyxati) hamda ayrim anjuman maʼruzalari va maqolalarning toʻliq matnlari PDF shaklida yuklab olinishi mumkin.</p>
 <div class="grup" data-iz="kitoblar">
 <h3 id="kitoblar">Kitoblar <span class="sayi">4</span></h3>
 <ol class="kunye" reversed>
-<li><span class="yil">2012</span><p><cite>Kemal Bilbaşar’ın Öykücülüğü</cite>. Türkçe Mevsimi, Uşak. <a class="doi" href="../kitaplar/2012-kemal-bilbasarin-oykuculugu.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
-<li><span class="yil tekrar">2012</span><p><cite>Şeyh Vasfi ve Muallim Naci ile Mektupları</cite>. Türkçe Mevsimi, Uşak (2. basım 2013). <a class="doi" href="../kitaplar/2012-seyh-vasfi-ve-muallim-naci-ile-mektuplari.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
-<li><span class="yil">2010</span><p><cite>Sabahattin Kudret Aksal: Hayatı, Sanatı ve Şiirleri Üzerinde Bir Araştırma</cite>. Millî Eğitim Bakanlığı Yayınları. <a class="doi" href="../kitaplar/2010-aksal-hayati-sanati-ve-siirleri.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
-<li><span class="yil">2000</span><p><cite>Niyazi Yıldırım Gençosmanoğlu: Hayatı ve Şiir Sanatı</cite>. Atatürk Kültür Merkezi Başkanlığı Yayınları. <a class="doi" href="../kitaplar/2000-gencosmanoglu-hayati-ve-siir-sanati.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
+<li><span class="yil">2012</span><p><cite>Kemal Bilbaşar’ın Öykücülüğü</cite>. Türkçe Mevsimi, Uşak. <a class="doi" href="../kitaplar/2012-kemal-bilbasarin-oykuculugu.pdf">Namuna sahifalar (PDF)</a></p></li>
+<li><span class="yil tekrar">2012</span><p><cite>Şeyh Vasfi ve Muallim Naci ile Mektupları</cite>. Türkçe Mevsimi, Uşak (2. basım 2013). <a class="doi" href="../kitaplar/2012-seyh-vasfi-ve-muallim-naci-ile-mektuplari.pdf">Namuna sahifalar (PDF)</a></p></li>
+<li><span class="yil">2010</span><p><cite>Sabahattin Kudret Aksal: Hayatı, Sanatı ve Şiirleri Üzerinde Bir Araştırma</cite>. Millî Eğitim Bakanlığı Yayınları. <a class="doi" href="../kitaplar/2010-aksal-hayati-sanati-ve-siirleri.pdf">Namuna sahifalar (PDF)</a></p></li>
+<li><span class="yil">2000</span><p><cite>Niyazi Yıldırım Gençosmanoğlu: Hayatı ve Şiir Sanatı</cite>. Atatürk Kültür Merkezi Başkanlığı Yayınları. <a class="doi" href="../kitaplar/2000-gencosmanoglu-hayati-ve-siir-sanati.pdf">Namuna sahifalar (PDF)</a></p></li>
 </ol>
 </div>
 <div class="grup" data-iz="tanqidiy-nashrlar">
 <h3 id="tanqidiy-nashrlar">Tanqidiy nashrlar va nashrga tayyorlangan asarlar <span class="sayi">12</span></h3>
 <ol class="kunye" reversed>
-<li><span class="yil">2025</span><p>Halid Ziya Uşaklıgil, <cite>Bir Acı Hikâye</cite>. Eleştirel basım. Telve. <a class="doi" href="../kitaplar/2025-bir-aci-hikaye.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
-<li><span class="yil">2023</span><p>Niyazi Yıldırım Gençosmanoğlu, <cite>Destanlar Burcu</cite> (genişletilmiş), <cite>Bozkurtların Destanı</cite>, <cite>Alperenler Destanı</cite> ve <cite>Dede Korkut’tan Boğaç Han ve Salur Kazan Destanları</cite>. Yeniden düzenlenmiş eleştirel basım, dört kitap. Bilge Kültür Sanat. <span class="pdfler">Tanishish uchun sahifalar (PDF): <a class="doi" href="../kitaplar/2023-destanlar-burcu.pdf">Destanlar Burcu</a>, <a class="doi" href="../kitaplar/2023-bozkurtlarin-destani.pdf">Bozkurtların Destanı</a>, <a class="doi" href="../kitaplar/2023-alperenler-destani.pdf">Alperenler Destanı</a>, <a class="doi" href="../kitaplar/2023-dede-korkuttan-bogac-han-ve-salur-kazan-destanlari.pdf">Dede Korkut’tan Boğaç Han ve Salur Kazan Destanları</a></span></p></li>
-<li><span class="yil">2018</span><p>Sabahattin Kudret Aksal, <cite>Denemeler, Konuşmalar</cite>. Genişletilmiş eleştirel basım (2. basım). Yapı Kredi Yayınları. <a class="doi" href="../kitaplar/2018-aksal-denemeler-konusmalar.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
-<li><span class="yil tekrar">2018</span><p>Sabahattin Kudret Aksal, <cite>Yazılar, Yanıtlar</cite>. Yapı Kredi Yayınları. <a class="doi" href="../kitaplar/2018-aksal-yazilar-yanitlar.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
-<li><span class="yil">2008</span><p>Sabahattin Kudret Aksal, <cite>Bütün Şiirleri</cite> (Şiirler 1938–1993). Eleştirel basım. Yapı Kredi Yayınları. <a class="doi" href="../kitaplar/2008-aksal-butun-siirleri.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
-<li><span class="yil">2005</span><p>Sabahattin Kudret Aksal, <cite>Gazoz Ağacı ve Diğer Öyküler</cite>. Eleştirel basım. Yapı Kredi Yayınları. <a class="doi" href="../kitaplar/2005-aksal-gazoz-agaci-ve-diger-oykuler.pdf">Tanishish uchun sahifalar (PDF)</a></p></li>
-<li><span class="yil">2002</span><p>Niyazi Yıldırım Gençosmanoğlu, <cite>Bütün Şiirleri</cite> 1–3: <cite>Destanlar Burcu</cite>, <cite>Bozkurtların Destanı</cite>, <cite>Alperenler Destanı</cite>. Eleştirel basım. Türk Edebiyatı Vakfı Yayınları. <span class="pdfler">Tanishish uchun sahifalar (PDF): <a class="doi" href="../kitaplar/2002-destanlar-burcu.pdf">Destanlar Burcu</a>, <a class="doi" href="../kitaplar/2002-bozkurtlarin-destani.pdf">Bozkurtların Destanı</a>, <a class="doi" href="../kitaplar/2002-alperenler-destani.pdf">Alperenler Destanı</a></span></p></li>
+<li><span class="yil">2025</span><p>Halid Ziya Uşaklıgil, <cite>Bir Acı Hikâye</cite>. Eleştirel basım. Telve. <a class="doi" href="../kitaplar/2025-bir-aci-hikaye.pdf">Namuna sahifalar (PDF)</a></p></li>
+<li><span class="yil">2023</span><p>Niyazi Yıldırım Gençosmanoğlu, <cite>Destanlar Burcu</cite> (genişletilmiş), <cite>Bozkurtların Destanı</cite>, <cite>Alperenler Destanı</cite> ve <cite>Dede Korkut’tan Boğaç Han ve Salur Kazan Destanları</cite>. Yeniden düzenlenmiş eleştirel basım, dört kitap. Bilge Kültür Sanat. <span class="pdfler">Namuna sahifalar (PDF): <a class="doi" href="../kitaplar/2023-destanlar-burcu.pdf">Destanlar Burcu</a>, <a class="doi" href="../kitaplar/2023-bozkurtlarin-destani.pdf">Bozkurtların Destanı</a>, <a class="doi" href="../kitaplar/2023-alperenler-destani.pdf">Alperenler Destanı</a>, <a class="doi" href="../kitaplar/2023-dede-korkuttan-bogac-han-ve-salur-kazan-destanlari.pdf">Dede Korkut’tan Boğaç Han ve Salur Kazan Destanları</a></span></p></li>
+<li><span class="yil">2018</span><p>Sabahattin Kudret Aksal, <cite>Denemeler, Konuşmalar</cite>. Genişletilmiş eleştirel basım (2. basım). Yapı Kredi Yayınları. <a class="doi" href="../kitaplar/2018-aksal-denemeler-konusmalar.pdf">Namuna sahifalar (PDF)</a></p></li>
+<li><span class="yil tekrar">2018</span><p>Sabahattin Kudret Aksal, <cite>Yazılar, Yanıtlar</cite>. Yapı Kredi Yayınları. <a class="doi" href="../kitaplar/2018-aksal-yazilar-yanitlar.pdf">Namuna sahifalar (PDF)</a></p></li>
+<li><span class="yil">2008</span><p>Sabahattin Kudret Aksal, <cite>Bütün Şiirleri</cite> (Şiirler 1938–1993). Eleştirel basım. Yapı Kredi Yayınları. <a class="doi" href="../kitaplar/2008-aksal-butun-siirleri.pdf">Namuna sahifalar (PDF)</a></p></li>
+<li><span class="yil">2005</span><p>Sabahattin Kudret Aksal, <cite>Gazoz Ağacı ve Diğer Öyküler</cite>. Eleştirel basım. Yapı Kredi Yayınları. <a class="doi" href="../kitaplar/2005-aksal-gazoz-agaci-ve-diger-oykuler.pdf">Namuna sahifalar (PDF)</a></p></li>
+<li><span class="yil">2002</span><p>Niyazi Yıldırım Gençosmanoğlu, <cite>Bütün Şiirleri</cite> 1–3: <cite>Destanlar Burcu</cite>, <cite>Bozkurtların Destanı</cite>, <cite>Alperenler Destanı</cite>. Eleştirel basım. Türk Edebiyatı Vakfı Yayınları. <span class="pdfler">Namuna sahifalar (PDF): <a class="doi" href="../kitaplar/2002-destanlar-burcu.pdf">Destanlar Burcu</a>, <a class="doi" href="../kitaplar/2002-bozkurtlarin-destani.pdf">Bozkurtların Destanı</a>, <a class="doi" href="../kitaplar/2002-alperenler-destani.pdf">Alperenler Destanı</a></span></p></li>
 </ol>
 </div>
 <div class="grup" data-iz="boblar">
@@ -502,7 +522,7 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <section id="oquv-fanlari" class="kusak" data-iz="oquv-fanlari">
 <div class="kusak-ic">
 <div class="kenar"><div class="kenar-ic"><h2>Oʻquv fanlari</h2></div></div>
-<div class="govde"><p>Uşak universitetida bakalavriat, magistratura va doktorantura bosqichlarida oʻqitgan asosiy fanlari.</p>
+<div class="govde"><p>Arif Yılmaz tomonidan Uşak universitetining bakalavriat, magistratura va doktorantura bosqichlarida oʻqitiladigan asosiy fanlar quyidagilardan iborat.</p>
 <dl class="alanlar dersler">
 <dt>Bakalavriat</dt><dd><ul class="ders-liste"><li>Tanzimat adabiyoti (sheʼriyat) <span class="ozgun" lang="tr">Tanzimat Edebiyatı (Şiir)</span></li><li>Servet-i Fünun adabiyoti (sheʼriyat) <span class="ozgun" lang="tr">Servet-i Fünun Edebiyatı (Şiir)</span></li><li>Respublika davri turk adabiyoti <span class="ozgun" lang="tr">Cumhuriyet Dönemi Türk Edebiyatı</span></li><li>1980-yillardan keyingi turk hikoyasi <span class="ozgun" lang="tr">1980 Sonrası Türk Hikâyesi</span></li><li>Yangi turk adabiyotiga kirish I–II va Yangi turk adabiyoti I–IV (avvalgi oʻquv rejasi) <span class="ozgun" lang="tr">Yeni Türk Edebiyatına Giriş I–II, Yeni Türk Edebiyatı I–IV</span></li><li>Sheʼr sanʼati <span class="ozgun" lang="tr">Şiir Sanatı</span></li><li>Sheʼr tahlili <span class="ozgun" lang="tr">Şiir Tahlilleri</span></li><li>Adabiyot nazariyasi asoslari I–II <span class="ozgun" lang="tr">Edebiyat Bilgi ve Teorileri I–II</span></li><li>Jahon adabiyoti <span class="ozgun" lang="tr">Dünya Edebiyatı</span></li><li>Xorijiy talabalar uchun akademik turk tili: gapirish va tinglash (universitet boʻyicha tanlov fani) <span class="ozgun" lang="tr">Uluslararası Öğrenciler İçin Akademik Türkçe Konuşma ve Dinleme</span></li></ul></dd>
 <dt>Magistratura</dt><dd><ul class="ders-liste"><li>XIX asr yangi turk adabiyoti matnlari tahlili <span class="ozgun" lang="tr">19. Yüzyıl Yeni Türk Edebiyatı Metin Tahlilleri</span></li><li>XIX asr turk adabiyotida hikoya va roman <span class="ozgun" lang="tr">19. Yüzyıl Türk Edebiyatında Hikâye ve Roman</span></li><li>Respublika davri turk sheʼriyati tahlili <span class="ozgun" lang="tr">Cumhuriyet Dönemi Türk Şiir Tahlilleri</span></li><li>Adabiyot tarixi metodologiyasi <span class="ozgun" lang="tr">Edebiyat Tarihi Metodolojisi</span></li><li>Til va adabiyot estetikasi <span class="ozgun" lang="tr">Dil ve Edebiyat Estetiği</span></li><li>Ilmiy tadqiqot usullari <span class="ozgun" lang="tr">Bilimsel Araştırma Yöntemleri</span></li></ul></dd>
@@ -515,14 +535,14 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <section id="ilmiy-rahbarlik" class="kusak alt" data-iz="ilmiy-rahbarlik">
 <div class="kusak-ic">
 <div class="kenar"><div class="kenar-ic"><h2>Ilmiy rahbarlik</h2></div></div>
-<div class="govde"><p>Uning ilmiy rahbarligida yozilib, Uşak universitetining magistratura va doktorantura institutida himoya qilingan dissertatsiyalar.</p>
+<div class="govde"><p>Arif Yılmaz ilmiy rahbarligida Uşak universitetida himoya qilingan magistrlik va doktorlik dissertatsiyalari yangidan eskiga qarab keltirilgan.</p>
 <ol class="kunye" reversed>
-<li><span class="yil">2026</span><p><span class="ogrenci">Büşra Ulusoy.</span> <cite>Engin Geçtan’ın romanlarında büyülü gerçekçilik: Gerçekliğin sihirli kapıları</cite>. Yüksek lisans.</p></li>
-<li><span class="yil">2025</span><p><span class="ogrenci">Mustafa Çiçek.</span> <cite>1980 sonrası Türk şiirinde İslami duyarlılık</cite>. Doktora.</p></li>
-<li><span class="yil tekrar">2025</span><p><span class="ogrenci">Talip Karaoğlu.</span> <cite>Türk romanında mültecilik ve mülteci (2000–2025)</cite>. Yüksek lisans.</p></li>
-<li><span class="yil">2024</span><p><span class="ogrenci">Bayram Bilir.</span> <cite>Türk ve Özbek edebiyatlarında toplumcu gerçekçi romanların kronotopları</cite>. Doktora.</p></li>
-<li><span class="yil tekrar">2024</span><p><span class="ogrenci">Fatih Bayram.</span> <cite>Epik tiyatronun Türk edebiyatına yansıması ve eserlerin incelenmesi</cite>. Doktora.</p></li>
-<li><span class="yil">2016</span><p><span class="ogrenci">Burcu Uşaklı Sandal.</span> <cite>Füruzan’ın öyküleri üzerine psikanalitik bir inceleme</cite>. Yüksek lisans.</p></li>
+<li><span class="yil">2026</span><p><span class="ogrenci">Büşra Ulusoy.</span> <cite>Engin Geçtan’ın Romanlarında Büyülü Gerçekçilik: Gerçekliğin Sihirli Kapıları</cite>. Yüksek Lisans Tezi.</p></li>
+<li><span class="yil">2025</span><p><span class="ogrenci">Mustafa Çiçek.</span> <cite>1980 Sonrası Türk Şiirinde İslami Duyarlılık</cite>. Doktora Tezi.</p></li>
+<li><span class="yil tekrar">2025</span><p><span class="ogrenci">Talip Karaoğlu.</span> <cite>Türk Romanında Mültecilik ve Mülteci (2000–2025)</cite>. Yüksek Lisans Tezi.</p></li>
+<li><span class="yil">2024</span><p><span class="ogrenci">Bayram Bilir.</span> <cite>Türk ve Özbek Edebiyatlarında Toplumcu Gerçekçi Romanların Kronotopları</cite>. Doktora Tezi.</p></li>
+<li><span class="yil tekrar">2024</span><p><span class="ogrenci">Fatih Bayram.</span> <cite>Epik Tiyatronun Türk Edebiyatına Yansıması ve Eserlerin İncelenmesi</cite>. Doktora Tezi.</p></li>
+<li><span class="yil">2016</span><p><span class="ogrenci">Burcu Uşaklı Sandal.</span> <cite>Füruzan’ın Öyküleri Üzerine Psikanalitik Bir İnceleme</cite>. Yüksek Lisans Tezi.</p></li>
 </ol>
 </div>
 </div>
@@ -531,7 +551,7 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <section id="matbuotda" class="kusak" data-iz="matbuotda">
 <div class="kusak-ic">
 <div class="kenar"><div class="kenar-ic"><h2>Matbuotda va mukofotlar</h2></div></div>
-<div class="govde"><p>2019-yilgi Sabahattin Kudret Aksal adabiy mukofotining hakamlar hayʼati maxsus mukofoti, esdalik lavhalari va sertifikatlar hamda Gaziantep, Uşak va Samarqanddagi faoliyat haqidagi matbuot xabarlari alohida sahifada jamlandi.</p>
+<div class="govde"><p>Arif Yılmaz sazovor boʻlgan 2019-yilgi Sabahattin Kudret Aksal adabiy mukofotining hakamlar hayʼati maxsus mukofoti, tashakkurnoma plaketlari hamda olimning Gaziantep, Uşak va Samarqanddagi ilmiy-pedagogik faoliyatiga oid matbuot xabarlari Matbuotda va mukofotlar sahifasida jamlangan.</p>
 <p><a href="basin/">Matbuotda va mukofotlar sahifasiga oʻtish</a></p>
 </div>
 </div>
@@ -569,8 +589,8 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 
 <footer class="hatime">
 <img class="serit-foto" src="../gorsel/serit.jpg" alt="" loading="lazy">
-<div class="hatime-zemin"><div class="hatime-ic"><img src="../gorsel/logo.png" alt="Arif Yılmaz logotipi" width="84" height="84">
-<p>Arif Yılmaz<span>Soʻnggi yangilanish: 2026-yil 16-noyabr</span><span>Sahifa pastidagi tasma Xoja Ahmad Yassaviy maqbarasining devor bezaklaridan olindi. Fotosurat Arif Yılmazniki.</span></p></div></div>
+<div class="hatime-zemin"><div class="hatime-ic"><img src="../gorsel/logo.svg" alt="Arif Yılmaz logotipi" width="104" height="104">
+<p>Arif Yılmaz<span>Soʻnggi yangilanish: 2026-yil 17-noyabr</span><span>Sahifa pastidagi tasma Xoja Ahmad Yassaviy maqbarasining devor bezaklaridan olindi. Fotosurat Arif Yılmazniki.</span></p></div></div>
 </footer>
 <script>
 (function () {

@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Basında ve ödüller | Arif Yılmaz</title>
+<title>Basında ve Ödüller | Arif Yılmaz</title>
 <meta name="description" content="Arif Yılmaz’ın 2019 Sabahattin Kudret Aksal Yazın Ödülü, plaket ve belgeleri ile 2008–2025 yılları arasında basında yer alan çalışmaları.">
 <link rel="canonical" href="https://yilmaz-arif.github.io/basin/">
 <link rel="alternate" hreflang="tr" href="https://yilmaz-arif.github.io/basin/">
 <link rel="alternate" hreflang="en" href="https://yilmaz-arif.github.io/en/basin/">
 <link rel="alternate" hreflang="uz" href="https://yilmaz-arif.github.io/uz/basin/">
 <link rel="alternate" hreflang="x-default" href="https://yilmaz-arif.github.io/basin/">
-<meta property="og:title" content="Basında ve ödüller | Arif Yılmaz">
+<meta property="og:title" content="Basında ve Ödüller | Arif Yılmaz">
 <meta property="og:description" content="Arif Yılmaz’ın 2019 Sabahattin Kudret Aksal Yazın Ödülü, plaket ve belgeleri ile 2008–2025 yılları arasında basında yer alan çalışmaları.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yilmaz-arif.github.io/basin/">
@@ -116,14 +116,16 @@ ul.haber li + li { border-top: 1px dotted var(--cizgi); }
 @media (max-width: 40rem) { ul.haber li { grid-template-columns: 1fr; gap: .1rem; } }
 
 .dil-secici { display: inline-flex; align-items: center; gap: 2px; padding: 3px; flex: none;
-  border-radius: 999px; background: rgba(8,15,40,.35); border: 1px solid rgba(213,219,234,.3); }
+  border-radius: 999px; background: rgba(4,9,28,.55); border: 1px solid rgba(255,255,255,.12);
+  box-shadow: inset 0 2px 5px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.08); }
 .dil-secici a.dil-sec, .dil-secici .etkin { display: inline-flex; align-items: center; gap: .42rem; margin: 0;
   padding: .3rem .62rem .3rem .45rem; border-radius: 999px; line-height: 1; text-decoration: none; box-shadow: none;
   font-family: "Alegreya Sans", system-ui, sans-serif; font-size: .8rem; font-weight: 500; letter-spacing: .07em;
   color: #D5DBEA; transition: background-color .2s, color .2s; }
-.dil-secici a.dil-sec:hover { background: rgba(169,220,228,.18); color: #fff; }
+.dil-secici a.dil-sec:hover { background: rgba(255,255,255,.1); color: #fff; }
 .dil-secici a.dil-sec:focus-visible { outline: 2px solid #A9DCE4; outline-offset: 1px; }
-.dil-secici .etkin { background: #F5F2EC; color: #16224F; }
+.dil-secici .etkin { color: #16224F; background: linear-gradient(180deg, #FFFFFF 0%, #EDEFF4 100%);
+  box-shadow: inset 0 1px 0 #fff, 0 2px 0 #8C95AC, 0 3px 6px rgba(0,0,0,.35); }
 .dil-secici .bayrak { display: block; width: 21px; height: 14px; flex: none; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,.28); }
 .dil-secici .etkin .bayrak { box-shadow: 0 0 0 1px rgba(22,34,79,.22); }
 .dil-secici .gizli { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -134,9 +136,17 @@ ul.haber li + li { border-top: 1px dotted var(--cizgi); }
 
 .ust-ic { max-width: 62rem; gap: 1.2rem; }
 .ust nav { display: flex; align-items: center; gap: .45rem; margin-left: auto; }
-.ust nav a { margin-left: 0; padding: .38rem .9rem; font-size: .95rem; line-height: 1.2; border-radius: 999px;
-  border: 1px solid rgba(213,219,234,.28); transition: background-color .2s, border-color .2s, color .2s; }
-.ust nav a:hover { background: rgba(169,220,228,.16); border-color: rgba(169,220,228,.65); color: #fff; }
+.ust nav { padding: 4px 0 7px; }
+.ust nav a { margin-left: 0; padding: .4rem .9rem .42rem; font-size: .95rem; line-height: 1.2; border-radius: 999px; text-decoration: none;
+  color: #E9EDF6; border: 1px solid rgba(255,255,255,.15);
+  background: linear-gradient(180deg, #2E3F7C 0%, #213068 55%, #1B2858 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.24), 0 2px 0 #0A1233, 0 3px 7px rgba(0,0,0,.38);
+  text-shadow: 0 1px 1px rgba(0,0,0,.35); transition: transform .12s ease, box-shadow .12s ease, border-color .2s, color .2s; }
+.ust nav a:hover { color: #fff; border-color: rgba(169,220,228,.6);
+  background: linear-gradient(180deg, #3A4D92 0%, #2A3C7C 55%, #23346E 100%);
+  transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 3px 0 #0A1233, 0 6px 12px rgba(0,0,0,.42); }
+.ust nav a:active { transform: translateY(2px); box-shadow: inset 0 2px 4px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.3); }
+@media (prefers-reduced-motion: reduce) { .ust nav a { transition: none; } .ust nav a:hover { transform: none; } }
 @media (max-width: 52rem) { .ust nav { display: none; } }
 
 .ceviri { display: block; color: var(--kursun); margin-top: .15rem; }
@@ -144,21 +154,21 @@ ul.haber li + li { border-top: 1px dotted var(--cizgi); }
 </head>
 <body>
 <header class="ust"><div class="ust-ic">
-<a class="marka" href="../"><img src="../gorsel/logo.png" alt="" width="42" height="42"><span>Arif Yılmaz</span></a>
-<nav aria-label="Site"><a href="../#ozgecmis">Özgeçmiş</a><a href="../#yayinlar">Yayınlar</a><a href="../#yazar-dosyalari">Yazar dosyaları</a></nav>
+<a class="marka" href="../"><img src="../gorsel/logo-isaret.svg" alt="" width="42" height="42"><span>Arif Yılmaz</span></a>
+<nav aria-label="Site"><a href="../#ozgecmis">Özgeçmiş</a><a href="../#yayinlar">Yayınlar</a><a href="../#yazar-dosyalari">Yazar Dosyaları</a></nav>
 <div class="dil-secici" role="group" aria-label="Dil seçimi"><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bayrak-tr" viewBox="0 0 30 20"><rect width="30" height="20" fill="#E30A17"/><circle cx="10.625" cy="10" r="5" fill="#fff"/><circle cx="11.875" cy="10" r="4" fill="#E30A17"/><polygon fill="#fff" points="14.583,10 19.106,11.469 16.311,7.622 16.311,12.378 19.106,8.531"/></symbol><symbol id="bayrak-en" viewBox="7.5 0 45 30"><clipPath id="bayrak-en-k"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0L60,30M60,0L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0L60,30M60,0L0,30" clip-path="url(#bayrak-en-k)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></symbol><symbol id="bayrak-uz" viewBox="0 0 375 250"><rect width="375" height="250" fill="#1EB53A"/><rect width="375" height="125" fill="#0099B5"/><rect y="80" width="375" height="90" fill="#CE1126"/><rect y="85" width="375" height="80" fill="#fff"/><circle cx="70" cy="40" r="30" fill="#fff"/><circle cx="80" cy="40" r="30" fill="#0099B5"/><g fill="#fff"><polygon points="154.0,7.5 155.9,13.4 162.1,13.4 157.1,17.0 159.0,22.9 154.0,19.2 149.0,22.9 150.9,17.0 145.9,13.4 152.1,13.4"/><polygon points="178.0,7.5 179.9,13.4 186.1,13.4 181.1,17.0 183.0,22.9 178.0,19.2 173.0,22.9 174.9,17.0 169.9,13.4 176.1,13.4"/><polygon points="202.0,7.5 203.9,13.4 210.1,13.4 205.1,17.0 207.0,22.9 202.0,19.2 197.0,22.9 198.9,17.0 193.9,13.4 200.1,13.4"/><polygon points="130.0,31.5 131.9,37.4 138.1,37.4 133.1,41.0 135.0,46.9 130.0,43.2 125.0,46.9 126.9,41.0 121.9,37.4 128.1,37.4"/><polygon points="154.0,31.5 155.9,37.4 162.1,37.4 157.1,41.0 159.0,46.9 154.0,43.2 149.0,46.9 150.9,41.0 145.9,37.4 152.1,37.4"/><polygon points="178.0,31.5 179.9,37.4 186.1,37.4 181.1,41.0 183.0,46.9 178.0,43.2 173.0,46.9 174.9,41.0 169.9,37.4 176.1,37.4"/><polygon points="202.0,31.5 203.9,37.4 210.1,37.4 205.1,41.0 207.0,46.9 202.0,43.2 197.0,46.9 198.9,41.0 193.9,37.4 200.1,37.4"/><polygon points="106.0,55.5 107.9,61.4 114.1,61.4 109.1,65.0 111.0,70.9 106.0,67.2 101.0,70.9 102.9,65.0 97.9,61.4 104.1,61.4"/><polygon points="130.0,55.5 131.9,61.4 138.1,61.4 133.1,65.0 135.0,70.9 130.0,67.2 125.0,70.9 126.9,65.0 121.9,61.4 128.1,61.4"/><polygon points="154.0,55.5 155.9,61.4 162.1,61.4 157.1,65.0 159.0,70.9 154.0,67.2 149.0,70.9 150.9,65.0 145.9,61.4 152.1,61.4"/><polygon points="178.0,55.5 179.9,61.4 186.1,61.4 181.1,65.0 183.0,70.9 178.0,67.2 173.0,70.9 174.9,65.0 169.9,61.4 176.1,61.4"/><polygon points="202.0,55.5 203.9,61.4 210.1,61.4 205.1,65.0 207.0,70.9 202.0,67.2 197.0,70.9 198.9,65.0 193.9,61.4 200.1,61.4"/></g></symbol></svg><span class="etkin" lang="tr" title="Türkçe" aria-current="true"><svg class="bayrak" viewBox="0 0 21 14" aria-hidden="true" focusable="false"><use href="#bayrak-tr"/></svg><span class="dil-kod">TR</span><span class="gizli">Türkçe</span></span><a class="dil-sec" href="../en/basin/" hreflang="en" lang="en" title="English"><svg class="bayrak" viewBox="0 0 21 14" aria-hidden="true" focusable="false"><use href="#bayrak-en"/></svg><span class="dil-kod">EN</span><span class="gizli">English</span></a><a class="dil-sec" href="../uz/basin/" hreflang="uz" lang="uz" title="Oʻzbekcha"><svg class="bayrak" viewBox="0 0 21 14" aria-hidden="true" focusable="false"><use href="#bayrak-uz"/></svg><span class="dil-kod">UZ</span><span class="gizli">Oʻzbekcha</span></a></div>
 </div></header>
 <main>
 <div class="dosya-bas">
 <div>
-<p class="tur">Haber ve belge arşivi</p>
-<h1>Basında ve ödüller</h1>
+<p class="tur">Haber ve Belge Arşivi</p>
+<h1>Basında ve Ödüller</h1>
 <p class="yillar">2008–2025</p>
 </div>
 <figure><img src="medya/aksal-odul-2019-sahne.jpg" alt="2019 Sabahattin Kudret Aksal Yazın Ödülü töreni"></figure>
 </div>
-<p class="giris">Bu sayfada Arif Yılmaz’ın aldığı ödül ve belgeler ile basında yer alan çalışmaları bir araya getirildi. Haberlerin çoğu, Gaziantep Üniversitesinde Türkçe Eğitimi Bölümü başkanlığı, Türkçe Topluluğu akademik danışmanlığı ve TÖMER müdürlüğü görevlerini yürüttüğü yıllara aittir. Son haberler ise Semerkant’taki misafir öğretim üyeliği dönemini ve Türk dünyasındaki üniversitelere yapılan ziyaretleri anlatır. Her haberin kaynağına bağlantı verildi. Uşak Üniversitesi haberlerinin kopyaları da bu sitede saklanmaktadır.</p>
-<nav class="icindekiler" aria-label="Bu sayfada"><a href="#oduller">Ödüller</a><a href="#ozbekistan">Özbekistan basınında</a><a href="#basinda">Basında</a></nav>
+<p class="giris">Bu sayfada Arif Yılmaz’ın aldığı ödüllere, plaketlere ve akademik çalışmalarının basındaki yansımalarına ilişkin belge ve haberler bir araya getirilmiştir. Haberlerin çoğu, Gaziantep Üniversitesinde Türkçe Eğitimi Bölümü başkanlığı, Türkçe Topluluğu akademik danışmanlığı ve TÖMER müdürlüğü görevlerini yürüttüğü yıllara aittir. Son haberler ise Semerkant’taki misafir öğretim üyeliği dönemini ve Türk dünyasındaki üniversitelere yapılan ziyaretleri anlatır. Haberlerin özgün kaynaklarına başlıklardaki bağlantılar üzerinden erişilebilir. Uşak Üniversitesi kaynaklı haberlerin arşiv kayıtları da site bünyesinde korunmaktadır.</p>
+<nav class="icindekiler" aria-label="Bu sayfada"><a href="#oduller">Ödüller</a><a href="#ozbekistan">Özbekistan Basınında</a><a href="#basinda">Basında</a></nav>
 <section id="oduller">
 <h2>Ödüller</h2>
 <div class="odul">
@@ -168,25 +178,25 @@ ul.haber li + li { border-top: 1px dotted var(--cizgi); }
 <div class="ikili"><figure class="kare"><a href="medya/aksal-odul-2019-toren-grup.jpg"><img src="medya/aksal-odul-2019-toren-grup.jpg" alt="Sabahattin Kudret Aksal Yazın Ödülü töreninde ödül alanlar ve seçiciler" loading="lazy"></a><figcaption>Tören, Yapı Kredi Yayınları, 25 Nisan 2019.</figcaption></figure><figure class="kare"><a href="medya/aksal-odul-2019-toren.jpg"><img src="medya/aksal-odul-2019-toren.jpg" alt="Ödül töreninden bir an" loading="lazy"></a><figcaption>Törenden bir an.</figcaption></figure></div>
 <p class="not">Fotoğraflar Kadir İncesu’ya aittir.</p>
 </div>
-<h3>Plaket ve belgeler</h3>
+<h3>Plaket ve Belgeler</h3>
 <ul class="haber"><li><span class="tarih">6 Aralık 2011</span><span><span class="haber-baslik">Gönüllülük belgesi</span><span class="haber-ozet">Avrupa Gönüllülük Yılı dolayısıyla Türkiye Eğitim Gönüllüleri Vakfı, Gaziantep Üniversitesi ve Gaziantep Ticaret Odasının düzenlediği törende belge alan öğretim üyeleri arasında yer aldı.</span><span class="kaynak-bag"><a href="https://habermerkezi.gaziantep.edu.tr/2011/12/06/universitemizde-%e2%80%9cbelge-takdim-toreni%e2%80%9d-duzenlendi/">GAÜN Haber Merkezi</a></span></span></li><li><span class="tarih">29 Mart 2011</span><span><span class="haber-baslik">Sağlık, Kültür ve Spor Daire Başkanlığı plaketi</span><span class="haber-ozet">Gaziantep Üniversitesi Sağlık, Kültür ve Spor Daire Başkanlığı, Türkçe Topluluğuna ve Bilinçli Gençler Topluluğuna verdiği destek için Arif Yılmaz’a plaket sundu.</span><span class="kaynak-bag"><a href="https://habermerkezi.gaziantep.edu.tr/2011/03/29/universitemizde-%e2%80%9chalk-muzigi-dinletisi%e2%80%9d-gerceklestirildi/">GAÜN Haber Merkezi</a></span></span></li></ul>
 </section>
 <section id="ozbekistan">
-<h2>Özbekistan basınında</h2>
+<h2>Özbekistan Basınında</h2>
 <p>Arif Yılmaz’ın Semerkant’taki misafir öğretim üyeliği döneminde katıldığı iki konferans Özbekistan’da haber oldu. İki haberde de kendisiyle yapılan kısa söyleşiler yayımlandı.</p>
 <div class="video-haber">
 <h3>Samarqand MTRK, <cite>Diyor yangiliklari</cite></h3>
 <p class="zaman">Ekim 2024</p>
 <p>Semerkant Devlet Yabancı Diller Enstitüsünde 10–11 Ekim 2024’te düzenlenen kültürlerarası diyalog konferansı, Semerkant bölge televizyonunun haber programında işlendi. Haberde Arif Yılmaz, konferansın Türkiye’den gelen katılımcısı olarak sorulara cevap verdi.</p>
 <div class="medya"><video controls controlslist="nodownload noplaybackrate" disablepictureinpicture oncontextmenu="return false;" preload="none" poster="medya/ozbekistan-semerkant-tv-2024.jpg" src="medya/ozbekistan-semerkant-tv-2024.mp4" aria-label="Samarqand MTRK haberi, Semerkant konferansı, Ekim 2024"></video></div>
-<p class="not">Videonun süresi 2 dakika 56 saniyedir. Konferansla ilgili <a href="haber/2024-semerkant-bildiri.html">bölüm haberi</a> de bu sitede okunabilir.</p>
+<p class="not">Video 2 dakika 56 saniye sürüyor. Konferansı anlatan <a href="haber/2024-semerkant-bildiri.html">bölüm haberi</a> de bu sitede okunabilir.</p>
 </div>
 <div class="video-haber">
 <h3>Asya Teknoloji Üniversitesi (Osiyo Texnologiyalar Universiteti)</h3>
 <p class="zaman">Kasım 2024</p>
 <p>Karşi’deki Asya Teknoloji Üniversitesinin 15–16 Kasım 2024’te düzenlediği filoloji konferansını üniversitenin basın birimi haber videosuyla duyurdu. Videoda Uşak Üniversitesi doçenti olarak tanıtılan Arif Yılmaz konferansla ilgili görüşlerini anlattı.</p>
 <div class="medya"><video controls controlslist="nodownload noplaybackrate" disablepictureinpicture oncontextmenu="return false;" preload="none" poster="medya/ozbekistan-karsi-2024.jpg" src="medya/ozbekistan-karsi-2024.mp4" aria-label="Asya Teknoloji Üniversitesi haber videosu, Karşi konferansı, Kasım 2024"></video></div>
-<p class="not">Videonun süresi 2 dakika 45 saniyedir. Konferansla ilgili <a href="haber/2024-karsi-bildiri.html">bölüm haberi</a> de bu sitede okunabilir.</p>
+<p class="not">Video 2 dakika 45 saniye sürüyor. Konferansı anlatan <a href="haber/2024-karsi-bildiri.html">bölüm haberi</a> de bu sitede okunabilir.</p>
 </div>
 <p class="not">Videolar Arif Yılmaz’ın kişisel arşivindendir.</p>
 </section>
@@ -198,7 +208,7 @@ ul.haber li + li { border-top: 1px dotted var(--cizgi); }
 <li><span class="tarih">15 Kasım 2024</span><span><span class="haber-baslik"><a href="haber/2024-karsi-bildiri.html">Karşi’de “Dijital Çağda Şiirin Metamorfozu” bildirisi</a></span><span class="haber-ozet">Asya Teknoloji Üniversitesinin Karşi’de düzenlediği filoloji konferansında İbrahim Tenekeci’nin Instagram paylaşımları üzerine hazırladığı bildiriyi sundu.</span><span class="kaynak-bag"><a href="https://turkdiliveedebiyati.usak.edu.tr/haber/12755">Uşak Üniversitesi Türk Dili ve Edebiyatı Bölümü</a><a class="ek-bag" href="haber/2024-karsi-bildiri.html">Haberin tamamı</a><a class="ek-bag" href="#ozbekistan">Haber videosu</a></span></span></li>
 <li><span class="tarih">14 Ekim 2024</span><span><span class="haber-baslik"><a href="haber/2024-semerkant-bildiri.html">Semerkant’ta “Yabancılaşmanın Dili” bildirisi</a></span><span class="haber-ozet">Semerkant Devlet Yabancı Diller Enstitüsünün kültürlerarası diyalog konulu uluslararası konferansında Hakan Günday’ın <cite>Daha</cite> romanındaki yabancılaşma sembolleri üzerine bildirisini sundu.</span><span class="kaynak-bag"><a href="https://turkdiliveedebiyati.usak.edu.tr/haber/12733">Uşak Üniversitesi Türk Dili ve Edebiyatı Bölümü</a><a class="ek-bag" href="haber/2024-semerkant-bildiri.html">Haberin tamamı</a><a class="ek-bag" href="#ozbekistan">Haber videosu</a></span></span></li>
 <li><span class="tarih">13 Ekim 2024</span><span><span class="haber-baslik"><a href="haber/2024-semerkant-gorev.html">Semerkant’ta misafir öğretim üyeliği</a></span><span class="haber-ozet">Uşak Üniversitesi ile Semerkant Devlet Yabancı Diller Enstitüsü arasındaki öğretim üyesi değişimi kapsamında 2024–2025 güz yarıyılında Semerkant’ta Türk dili ve modern Türk edebiyatı dersleri vermeye başladı. Enstitü Rektörü Prof. Dr. Xolikov Bahodir Alikulovich kendisini makamında ağırladı.</span><span class="kaynak-bag"><a href="https://turkdiliveedebiyati.usak.edu.tr/haber/12701">Uşak Üniversitesi Türk Dili ve Edebiyatı Bölümü</a><a class="ek-bag" href="haber/2024-semerkant-gorev.html">Haberin tamamı</a></span></span></li>
-<li><span class="tarih">9 Mart 2017</span><span><span class="haber-baslik">“Mehmet Akif Ersoy ve İstiklal Marşı” konferansı</span><span class="haber-ozet">İstiklâl Marşı’nın Kabulü ve Mehmet Âkif Ersoy’u Anma Haftası etkinlikleri arasında Uşak Üniversitesi Mustafa Kemal Paşa Amfisinde konferans verdi.</span><span class="kaynak-bag">Uşak Üniversitesi Sağlık Kültür ve Spor Daire Başkanlığı, 2017 Faaliyet Raporu<a class="ek-bag" href="../yazarlar/mehmet-akif-ersoy.html#calismalar">Afiş ve ayrıntılar</a></span></span></li>
+<li><span class="tarih">9 Mart 2017</span><span><span class="haber-baslik">“Mehmet Akif Ersoy ve İstiklal Marşı” konferansı</span><span class="haber-ozet">İstiklal Marşı’nın Kabulü ve Mehmet Âkif Ersoy’u Anma Haftası etkinlikleri arasında Uşak Üniversitesi Mustafa Kemal Paşa Amfisinde konferans verdi.</span><span class="kaynak-bag">Uşak Üniversitesi Sağlık Kültür ve Spor Daire Başkanlığı, 2017 Faaliyet Raporu<a class="ek-bag" href="../yazarlar/mehmet-akif-ersoy.html#calismalar">Afiş ve ayrıntılar</a></span></span></li>
 <li><span class="tarih">7 Temmuz 2012</span><span><span class="haber-baslik">Yurt dışından gelen öğrencilerden Rektöre ziyaret</span><span class="haber-ozet">TÖMER’in Yunus Emre Enstitüsü ile birlikte düzenlediği Türkçe Yaz Okuluna 13 ülkeden katılan 19 öğrenci, TÖMER Müdürü Arif Yılmaz ile birlikte Rektör Prof. Dr. M. Yavuz Coşkun’u ziyaret etti.</span><span class="kaynak-bag"><a href="https://habermerkezi.gaziantep.edu.tr/2012/07/07/yurt-disindan-gelen-ogrencilerden-rektore-ziyaret/">GAÜN Haber Merkezi</a></span></span></li>
 <li><span class="tarih">27 Ocak 2012</span><span><span class="haber-baslik">TÖMER’de eğitim semineri</span><span class="haber-ozet">Gaziantep Üniversitesi TÖMER’in düzenlediği eğitim seminerine Ankara Üniversitesi TÖMER Müdürü Prof. Dr. Engin Uzun konuk oldu. Arif Yılmaz seminere TÖMER Müdürü olarak katıldı.</span><span class="kaynak-bag"><a href="https://habermerkezi.gaziantep.edu.tr/2012/01/27/tomer-tarafindan-egitim-semineri-gerceklestirildi/">GAÜN Haber Merkezi</a></span></span></li>
 <li><span class="tarih">25 Kasım 2011</span><span><span class="haber-baslik">TÖMER’de bilgilendirme ve paylaşım toplantısı</span><span class="haber-ozet">TÖMER ile Türkçe Topluluğunun Gazi Üniversitesi Türkçe Öğretim Merkezi ile birlikte düzenlediği toplantıda Türkçe öğretim merkezlerinin amaçlarını ve Gaziantep Üniversitesi TÖMER’in bu alandaki yerini anlattı.</span><span class="kaynak-bag"><a href="https://habermerkezi.gaziantep.edu.tr/2011/11/25/tomer%e2%80%99de-bilgilendirme-ve-paylasim-toplantisi-duzenlendi/">GAÜN Haber Merkezi</a></span></span></li>
