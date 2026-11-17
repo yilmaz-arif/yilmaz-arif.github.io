@@ -25,7 +25,7 @@
 <meta name="google-site-verification" content="WlCiagpnAMUfo0lvhPuMNggD37dB_0X8YNjpOdyNYPk">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alegreya+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alegreya+Sans:wght@400;500&family=PT+Sans:wght@700&display=swap">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arif Yılmaz", "image": "https://yilmaz-arif.github.io/gorsel/arif-yilmaz.jpg", "url": "https://yilmaz-arif.github.io/", "identifier": "https://orcid.org/0000-0002-2652-3649", "sameAs": ["https://scholar.google.com/citations?user=m_PXF6oAAAAJ", "https://orcid.org/0000-0002-2652-3649", "https://avesis.usak.edu.tr/arif.yilmaz", "https://dergipark.org.tr/tr/pub/@ayilmaz_1038", "https://www.webofscience.com/wos/author/rid/ACV-6378-2022", "https://www.researchgate.net/profile/Arif-Yilmaz", "https://usak.academia.edu/ArifY%C4%B1lmaz", "https://sites.google.com/view/ayilmaz"], "honorificPrefix": "Doç. Dr.", "jobTitle": "Doçent, Yeni Türk Edebiyatı", "affiliation": {"@type": "CollegeOrUniversity", "name": "Uşak Üniversitesi"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Ankara Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Gazi Üniversitesi"}, {"@type": "CollegeOrUniversity", "name": "Yüzüncü Yıl Üniversitesi"}], "knowsAbout": ["Yeni Türk Edebiyatı", "Türk şiiri", "Türk romanı", "Türk hikâyesi", "Türk tiyatrosu", "Metin neşri"]}</script>
 <style>
 
@@ -189,13 +189,14 @@ nav.icindekiler .nav-ad { display: flex; align-items: center; gap: .8rem; paddin
 nav.icindekiler .nav-ad img { display: block; width: 46px; height: 46px; }
 nav.icindekiler .nav-ad .logo-tam { display: none; }
 nav.icindekiler .nav-ad span { opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s; }
+nav.icindekiler .nav-ad span img.logo-yazi { display: block; position: static; width: auto; height: 32px; opacity: 1; transition: none; }
 nav.icindekiler.kaydi .nav-ad span { opacity: 1; visibility: visible; }
 @media (min-width: 68.01rem) {
   nav.icindekiler .nav-ad { position: relative; padding-left: calc(46px + .8rem); }
   nav.icindekiler .nav-ad img { position: absolute; left: 0; top: 0; }
-  nav.icindekiler .nav-ad .logo-tam { display: block; opacity: 0; filter: drop-shadow(0 5px 12px rgba(4,9,28,.45)); }
+  nav.icindekiler .nav-ad .logo-tam { display: block; opacity: 0; }
   nav.icindekiler.hazir .nav-ad img { transition: width .28s ease, height .28s ease, top .28s ease, opacity .22s ease; }
-  nav.icindekiler.tepe .nav-ad img { width: 128px; height: 128px; top: 2px; }
+  nav.icindekiler.tepe .nav-ad img { width: 134px; height: 134px; top: 0; }
   nav.icindekiler.tepe .nav-ad .logo-tam { opacity: 1; }
   nav.icindekiler.tepe .nav-ad .logo-kucuk { opacity: 0; }
 }
@@ -259,7 +260,7 @@ footer.hatime { max-width: none; padding: 0; margin-top: 0; border-top: 0; }
 footer.hatime .serit-foto { display: block; width: 100%; height: 84px; object-fit: cover; }
 footer.hatime .hatime-zemin { background: var(--lacivert); }
 footer.hatime .hatime-ic { max-width: var(--en); margin: 0 auto; padding: 2rem 2rem 2.6rem; display: flex; align-items: center; gap: 1.4rem; }
-footer.hatime .hatime-ic > img { flex: none; width: 104px; height: 104px; }
+footer.hatime .hatime-ic > img { flex: none; width: 128px; height: 128px; }
 footer.hatime p { margin: 0; font-family: var(--serif); font-size: 1.1rem; line-height: 1.5; color: #F5F2EC; }
 footer.hatime p span { display: block; font-family: var(--sans); font-size: .88rem; color: #B9C2D8; }
 @media (max-width: 68rem) {
@@ -330,7 +331,7 @@ footer.hatime p span { display: block; font-family: var(--sans); font-size: .88r
 nav.icindekiler ul { gap: .35rem; padding: 5px 0 8px; overflow-x: auto; scrollbar-width: none; }
 nav.icindekiler ul::-webkit-scrollbar { display: none; }
 /* Menü düğmeleri: üstten ışık alan, alt kenarı kalın, basınca çöken kabartma düğme */
-nav.icindekiler ul a { padding: .42rem .7rem .44rem; font-size: .97rem; line-height: 1.2; white-space: nowrap; text-decoration: none;
+nav.icindekiler ul a { padding: .42rem .62rem .44rem; font-family: "PT Sans", var(--sans); font-weight: 700; font-size: .97rem; line-height: 1.2; white-space: nowrap; text-decoration: none;
   color: #E9EDF6; border-radius: 999px; border: 1px solid rgba(255,255,255,.15);
   background: linear-gradient(180deg, #2E3F7C 0%, #213068 55%, #1B2858 100%);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.24), 0 2px 0 #0A1233, 0 3px 7px rgba(0,0,0,.38);
@@ -346,7 +347,8 @@ nav.icindekiler ul a[aria-current] { color: #10204A; text-shadow: 0 1px 0 rgba(2
 nav.icindekiler ul a:focus-visible { outline: 2px solid #A9DCE4; outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { nav.icindekiler ul a { transition: none; } nav.icindekiler ul a:hover { transform: none; } }
 nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; padding: 0 0 0 1rem; margin-left: 0; border-left: 1px solid rgba(213,219,234,.3); }
-@media (max-width: 75rem) { nav.icindekiler ul a { padding-left: .6rem; padding-right: .6rem; } }
+html[lang="uz"] nav.icindekiler ul a { font-size: .9rem; }   /* Özbekçe başlıklar daha uzun */
+@media (max-width: 75rem) { nav.icindekiler ul a { padding-left: .5rem; padding-right: .5rem; } }
 @media (max-width: 68rem) { .nav-ic { gap: 1.1rem; } nav.icindekiler .nav-dil { padding-left: .8rem; } }
 @media (max-width: 30rem) { .serlevha .profiller { grid-template-columns: repeat(2, max-content); } }
 @media (max-width: 40rem) {
@@ -359,7 +361,7 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 <a class="atla" href="#ozgecmis">İçeriğe geç</a>
 <div id="ust"></div>
 <nav class="icindekiler" aria-label="Sayfa bölümleri" data-sarkik>
-<div class="nav-ic"><a class="nav-ad" href="#ust" aria-label="Arif Yılmaz, sayfa başı"><img class="logo-kucuk" src="gorsel/logo-isaret.svg" width="46" height="46" alt=""><img class="logo-tam" src="gorsel/logo.svg" width="46" height="46" alt=""><span>Arif Yılmaz</span></a>
+<div class="nav-ic"><a class="nav-ad" href="#ust" aria-label="Arif Yılmaz, sayfa başı"><img class="logo-kucuk" src="gorsel/logo-isaret.svg" width="46" height="46" alt=""><img class="logo-tam" src="gorsel/logo.svg" width="46" height="46" alt=""><span><img class="logo-yazi" src="gorsel/logo-yazi-acik.svg" width="127" height="32" alt=""></span></a>
 <ul>
   <li><a href="#ozgecmis">Özgeçmiş</a></li>
   <li><a href="#alanlar">Çalışma Alanları</a></li>
@@ -590,7 +592,7 @@ nav.icindekiler .nav-dil { display: flex; align-items: center; flex: none; paddi
 
 <footer class="hatime">
 <img class="serit-foto" src="gorsel/serit.jpg" alt="" loading="lazy">
-<div class="hatime-zemin"><div class="hatime-ic"><img src="gorsel/logo.svg" alt="Arif Yılmaz logosu" width="104" height="104">
+<div class="hatime-zemin"><div class="hatime-ic"><img src="gorsel/logo.svg" alt="Arif Yılmaz logosu" width="128" height="128">
 <p>Arif Yılmaz<span>Son güncelleme: 17 Kasım 2026</span><span>Sayfanın altındaki şerit Hoca Ahmed Yesevî Türbesi’nin duvar süslemelerinden alındı. Fotoğraf Arif Yılmaz’a aittir.</span></p></div></div>
 </footer>
 <script>
